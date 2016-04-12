@@ -15,11 +15,22 @@
     float:left;*/
 }
 .r2 .panel {
-    height:100px;
+    height:110px;
     margin-bottom: 0;
+}
+.r2 p {
+    font-weight: bold;
+}
+.r2:last-child {
+    padding-right: 0;
 }
 .r3 {
     height:220px;
+}
+.sb-r3 p {
+    font-weight: bold;
+    font-size: 24px;
+    color:white;
 }
 .r3 .panel {
     height:220px;
@@ -35,10 +46,22 @@
 .sb-r1 {
     height:190px;
     margin-bottom:40px;
+    border-radius: 3px;
+}
+#sb-r1-2
+{
+    color:white;
 }
 .sb-r3 {
-    border:1px solid red;
-    height:110px;
+    border-radius: 3px;
+    height:105px;
+    margin-bottom: 10px;
+}
+#sb-r3-1 {
+    background-color: rgb(17,100,173);
+}
+#sb-r3-2 {
+    background-color: rgb(161,30,23);
 }
 #sb-r1-1 {
     background-image: url("img/Vector-Smart-Object3.png");

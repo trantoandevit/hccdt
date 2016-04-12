@@ -53,13 +53,13 @@
                             <div class="statistic-block">
                                 <div class="row">
                                     <p class="col-xs-6">Tổng số:</p>
-                                    <p class="col-xs-6 text-left">6969</p>
+                                    <p class="col-xs-6 text-right">6969</p>
                                     <p class="col-xs-6">Kỳ trước:</p>
-                                    <p class="col-xs-6 text-left">696</p>
+                                    <p class="col-xs-6 text-right">696</p>
                                     <p class="col-xs-6">Đã tiếp nhận:</p>
-                                    <p class="col-xs-6 text-left">969</p>
+                                    <p class="col-xs-6 text-right">969</p>
                                     <p class="col-xs-6">Đã giải quyết:</p>
-                                    <p class="col-xs-6 text-left">996</p>
+                                    <p class="col-xs-6 text-right">996</p>
                                 </div>
                             </div>
                         </div>
@@ -73,13 +73,13 @@
                             <div class="statistic-block">
                                 <div class="row">
                                     <p class="col-xs-6">Tổng số:</p>
-                                    <p class="col-xs-6 text-left">6969</p>
+                                    <p class="col-xs-6 text-right">6969</p>
                                     <p class="col-xs-6">Kỳ trước:</p>
-                                    <p class="col-xs-6 text-left">696</p>
+                                    <p class="col-xs-6 text-right">696</p>
                                     <p class="col-xs-6">Đã tiếp nhận:</p>
-                                    <p class="col-xs-6 text-left">969</p>
+                                    <p class="col-xs-6 text-right">969</p>
                                     <p class="col-xs-6">Đã giải quyết:</p>
-                                    <p class="col-xs-6 text-left">996</p>
+                                    <p class="col-xs-6 text-right">996</p>
                                 </div>
                             </div>
                         </div>
@@ -92,14 +92,14 @@
                             </div>
                             <div class="statistic-block">
                                 <div class="row">
-                                    <p class="col-xs-6 text-left">Tổng số:</p>
-                                    <p class="col-xs-6">6969</p>
-                                    <p class="col-xs-6 text-left">Kỳ trước:</p>
-                                    <p class="col-xs-6">696</p>
-                                    <p class="col-xs-6 text-left">Đã tiếp nhận:</p>
-                                    <p class="col-xs-6">969</p>
-                                    <p class="col-xs-6 text-left">Đã giải quyết:</p>
-                                    <p class="col-xs-6">996</p>
+                                    <p class="col-xs-6">Tổng số:</p>
+                                    <p class="col-xs-6 text-right">6969</p>
+                                    <p class="col-xs-6">Kỳ trước:</p>
+                                    <p class="col-xs-6 text-right">696</p>
+                                    <p class="col-xs-6">Đã tiếp nhận:</p>
+                                    <p class="col-xs-6 text-right">969</p>
+                                    <p class="col-xs-6">Đã giải quyết:</p>
+                                    <p class="col-xs-6 text-right">996</p>
                                 </div>
                             </div>
                         </div>
@@ -135,8 +135,13 @@
                     </div>
                     <div class="col-md-3 r3">
                         <div class="row">
-                            <div class="col-md-12 sb-r3"></div>
-                            <div class="col-md-12 sb-r3"></div>
+                            <div class="col-md-12 sb-r3" id="sb-r3-1">
+                                <p class="text-right">GỬI HỒ SƠ</p>
+                                <p class="text-right">TRỰC TUYẾN</p>
+                            </div>
+                            <div class="col-md-12 sb-r3" id="sb-r3-2">
+                                <p>ĐĂNG KÝ</p>
+                            </div>
                         </div>
                     </div>
                 </div>
