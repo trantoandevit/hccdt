@@ -1,0 +1,65 @@
+.div-synthesis
+{
+    margin: 28px 15px 0px 10px;
+    border: 1px solid #E5E4E4;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px #B9B9B9;
+    border-right: none;
+}
+
+.div-synthesis .div-footer
+{
+    height: 40px;
+    background: #000000 url(../images/bg-footer-synthesis.png) top left repeat-x;
+}
+
+.table_synthesis .xam
+{
+    background: #f4f6f9;
+}
+.table_synthesis
+{
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #E5E4E4;
+    margin-top: -6px;
+}
+
+.table_synthesis tr .first
+{
+    border: 1px solid #E5E4E4;
+    border-left: none;
+    border-top: none;
+}
+
+.table_synthesis tr .last
+{
+    border: 1px solid #E5E4E4;
+    border-right: none;
+    border-top: none;
+}
+
+.table_synthesis tr .top
+{
+    border: 1px solid #E5E4E4;
+    border-top: none;
+}
+
+
+.table_synthesis tr .left
+{
+    border-left: none;
+}
+.table_synthesis tr .right
+{
+    border-right: none;
+}
+
+.table_synthesis tr .end
+{
+    background: #B8B8B8;
+    color:white;
+    font-weight: bold;
+}

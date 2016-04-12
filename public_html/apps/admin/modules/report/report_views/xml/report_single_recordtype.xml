@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report layout="L"><!--P: Doc, L: Ngang-->
+    <head>
+        <tr>
+            <td size="5%" rowspan="2">STT</td>
+            <td size="10%" rowspan="2">Lĩnh vực</td>
+            <td size="10%" colspan="2" >Tiếp nhận</td>
+            <td size="15%" colspan="3">Đang giải quyết</td>
+            <td size="20%" colspan="4">Đã giải quyết</td>
+            <td size="10%" colspan="2">Tạm Dừng</td>
+            <td size="10%" colspan="2">Hủy hồ sơ</td>
+            <td size="15%" colspan="3">Chờ trả KQ</td>
+            <td size="5%" rowspan="2">Tỷ lệ giải quyết sớm và đúng hạn</td>
+        </tr>
+        <tr>
+            <td size="5%">Kỳ trước</td>
+            <td size="5%">Trong kỳ</td>
+            
+            <td size="5%">Tổng số</td>
+            <td size="5%">Chưa đến hạn</td>
+            <td size="5%">Quá hạn</td>
+            
+            <td size="5%">Tổng số</td>
+            <td size="5%">Sớm hạn</td>
+            <td size="5%">Đúng hạn</td>
+            <td size="5%">Quá hạn</td>
+            
+            <td size="5%">Bổ sung HS</td>
+            <td size="5%">Thực hiện NVTC</td>
+            
+            <td size="5%">Từ chối</td>
+            <td size="5%">Công dân rút</td>
+            
+            <td size="5%">Tổng số</td>
+            <td size="5%">Trong kỳ</td>
+            <td size="5%">Kỳ trước</td>
+        </tr>
+    </head>
+    <list>
+        <!-- Độ rộng cột trong báo cáo tính bằng pixel -->
+        <item type="text" id="RN" name="TT" size="5%" align="center" bold="true" excel_width="10"/>
+        <item type="text" id="C_SPEC_NAME" name="Lĩnh vực"  size="10%" bold="true" excel_width="83"/>
+        
+        <item type="text" id="C_COUNT_KY_TRUOC" size="5%" name="Kỳ trước"  align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_TIEP_NHAN" size="5%" name="Trong kỳ"  align="center" number_format="true" excel_width="18"/>
+        
+        <item type="text" id="MATHS" size="5%" formula="sum" param="C_COUNT_THU_LY_CHUA_DEN_HAN,C_COUNT_THU_LY_QUA_HAN" name="Tổng số"  align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_THU_LY_CHUA_DEN_HAN" size="5%" name="Chưa đến hạn"  align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_THU_LY_QUA_HAN" size="5%" name="Quá hạn"  align="center" number_format="true" excel_width="18"/>
+        
+        <item type="text" id="MATHS" size="5%" formula="sum" param="C_COUNT_TRA_SOM_HAN,C_COUNT_TRA_DUNG_HAN,C_COUNT_TRA_QUA_HAN" name="Tổng số"  align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_TRA_SOM_HAN" size="5%" name="Sớm hạn"  align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_TRA_DUNG_HAN" size="5%" name="Đúng hạn"  align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_TRA_QUA_HAN" size="5%" name="Quá hạn" align="center" number_format="true" excel_width="18"/>
+        
+        <item type="text" id="C_COUNT_BO_SUNG" size="5%" name="Bổ sung HS" align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_NVTC" size="5%" name="Thực hiện NVTC" align="center" number_format="true" excel_width="18"/>
+        
+        <item type="text" id="C_COUNT_TU_CHOI" size="5%" name="Từ chối" align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_CONG_DAN_RUT" size="5%" name="Công dân rút" align="center" number_format="true" excel_width="18"/>
+        
+        <item type="text" id="MATHS" size="5%" formula="sum" param="C_COUNT_CHO_TRA_KY_TRUOC,C_COUNT_CHO_TRA_TRONG_KY" name="Tổng số chờ trả"  align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_CHO_TRA_TRONG_KY" size="5%" name="Chờ trả trong kỳ" align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_CHO_TRA_KY_TRUOC" size="5%" name="Chờ trả kỳ trước" align="center" number_format="true" excel_width="18"/>
+        
+        <item type="text" id="MATHS" formula="formula_percent" param="C_COUNT_TRA_SOM_HAN,C_COUNT_TRA_DUNG_HAN,C_COUNT_TRA_QUA_HAN" size="5%" name="Tỷ lệ trả sớm và đúng hạn" align="center" number_format="true" excel_width="18"/>
+    </list>
+    <total>
+        <item colspan="2" bold="true" name="Tổng cộng" align="center"/>
+        
+        <item colspan="1" bold="true" id="C_COUNT_KY_TRUOC" align="center"/>
+        <item colspan="1" bold="true" id="C_COUNT_TIEP_NHAN" align="center"/>
+        
+        <item colspan="1" bold="true" id="MATHS" formula="sum" param="C_COUNT_THU_LY_CHUA_DEN_HAN,C_COUNT_THU_LY_QUA_HAN" align="center"/>
+        <item colspan="1" bold="true" id="C_COUNT_THU_LY_CHUA_DEN_HAN" align="center"/>
+        <item colspan="1" bold="true" id="C_COUNT_THU_LY_QUA_HAN" align="center"/>
+        
+        <item colspan="1" bold="true" id="MATHS" formula="sum" param="C_COUNT_TRA_SOM_HAN,C_COUNT_TRA_DUNG_HAN,C_COUNT_TRA_QUA_HAN" align="center"/>
+        <item colspan="1" bold="true" id="C_COUNT_TRA_SOM_HAN" align="center"/>
+        <item colspan="1" bold="true" id="C_COUNT_TRA_DUNG_HAN" align="center"/>
+        <item colspan="1" bold="true" id="C_COUNT_TRA_QUA_HAN" align="center"/>
+        
+        <item colspan="1" bold="true" id="C_COUNT_BO_SUNG" align="center"/>
+        <item colspan="1" bold="true" id="C_COUNT_NVTC" align="center"/>
+        
+        <item colspan="1" bold="true" id="C_COUNT_TU_CHOI" align="center"/>
+        <item colspan="1" bold="true" id="C_COUNT_CONG_DAN_RUT" align="center"/>
+        
+        <item colspan="1" bold="true" id="MATHS" formula="sum" param="C_COUNT_CHO_TRA_KY_TRUOC,C_COUNT_CHO_TRA_TRONG_KY" align="center"/>
+        <item colspan="1" bold="true" id="C_COUNT_CHO_TRA_TRONG_KY" align="center"/>
+        <item colspan="1" bold="true" id="C_COUNT_CHO_TRA_KY_TRUOC" align="center"/>
+        
+        <item colspan="1" bold="true" id="MATHS" formula="formula_percent" param="C_COUNT_TRA_SOM_HAN,C_COUNT_TRA_DUNG_HAN,C_COUNT_TRA_QUA_HAN" align="center"/>
+    </total>
+    <sub_total>
+    </sub_total>
+    <note><![CDATA[
+                    <br/>
+                    <dl class="note">
+                        <dt><b>Ghi chú:</b><br/></dt>
+                        <dd>(3) + (4) = (8) + (12) + (13) + (14) + (15)<br/></dd>
+                        <dd>(19)      = (((9) + (10))/(8)) * 100<br/></dd>
+                    </ol>
+                ]]>
+    </note>
+</report>

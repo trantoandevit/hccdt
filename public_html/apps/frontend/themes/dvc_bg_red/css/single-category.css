@@ -1,0 +1,149 @@
+#single-cat
+{
+    margin:5px 0;
+}
+#cat-content
+{
+    text-align: justify;
+    
+}
+#single-cat .box-content
+{
+    overflow: hidden;
+}
+#single-cat .first-content,#single-cat .item-content
+{
+    
+    overflow: hidden;
+}
+.div-item-article,.div-sticky-article
+{
+    margin-bottom: 10px;
+    border-bottom:  solid 2px #FFE3D2;
+    padding-bottom: 10px
+}
+
+.div-item-article:last-child
+{
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+#single-cat .first-title ,#single-cat .item-title 
+{
+    width: 100%;
+    overflow: hidden;
+}
+#single-cat .first-title a:hover,#single-cat .item-title a:hover
+{
+    text-decoration:underline;
+}
+#single-cat .first-content a,#single-cat .item-content a
+{
+    float: left;
+    overflow: hidden;
+    display: block;
+    margin-right: 10px;
+}
+#single-cat .first-content a img,#single-cat .item-content a img
+{
+    width: 150px;
+    height: 100px;
+    margin-left: 10px;
+}
+#single-cat .box-content .first-title a img,#single-cat .item-content .item-title img
+{
+    height: 10px;
+    width: 30px;
+}
+#single-cat .first-title a,#single-cat .item-title a
+{
+    font-size: 13px;
+    font-weight: bold;
+    color: #FF6E15
+}
+/*##cat*/
+#left-sidebar
+{
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+}
+#widget-left
+{
+    margin-left: 10px;
+    border: solid 1px #F7AE66;
+    margin: 0;
+    padding: 0
+}
+.begin-date
+{
+    color: #aaaaaa;
+    
+}
+.ButtonNext:hover,.ButtonPre:hover
+{
+    text-decoration: underline;
+}
+.ButtonPre
+{
+    text-align: left;
+    margin-left: 20px;
+}
+.ButtonNext
+{
+    float: right;
+    margin-right: 20px;
+}
+.ButtonPre:before
+{
+     content: '←'
+}
+.ButtonNext:after
+{
+    content: '→'
+}
+/*###*/
+.other-new
+{
+    margin: 0;
+    padding: 0
+}
+
+.other-new .other-articles-ttile
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #A71817;
+    width: 470px;
+    font-family: Tahoma ;
+    border-bottom: solid 2px #e85a04;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.other-new .other-sticky ul
+{
+    margin: 0  0 20px 0;
+    padding: 0;
+}
+.other-new .other-sticky ul li
+{
+    list-style-type: none;
+    margin: 2px auto 2px;
+}
+.other-new .other-sticky ul li a
+{
+    background:  url('../images/icon-right.png') left center no-repeat;
+    padding-left: 15px;
+    color: #1773BC;
+}
+.other-sticky ul li a:hover
+{
+    color: #e85a04;
+    text-decoration: underline;
+}
+.other-new .other-new-begin-date
+{
+    font-style: italic;
+    color: #8D8B85;
+}

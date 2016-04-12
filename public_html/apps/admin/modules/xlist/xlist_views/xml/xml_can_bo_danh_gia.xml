@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<line label="Đơn vị trực thuộc" cols="1">
+		<item type="DropDownList" id="ddl_member" name="đơn vị trực thuộc" allownull="yes" validate="ddli" label="Đơn vị:" defaul_value="0" src_xlist="member" view="true"/>
+	</line>
+	<line label="" cols="1">
+		<item type="TextboxDate" id="txt_birthday" name="Ngày sinh" allownull="no" validate="date" label="Ngày sinh" defaul_value="" size="30" css="" view="true"/>
+	</line>
+	<line label="" cols="1">
+		<item type="Textbox" id="txt_education" name="Trình độ học vấn" allownull="no" validate="text" label="Trình độ học vấn" defaul_value="" size="40" css="" view="true"/>
+	</line>
+	<line label="" cols="1">
+		<item type="Textbox" id="txt_job_title" name="Chức vụ" allownull="no" validate="text" label="Chức vụ" defaul_value="" size="40" css="" view="true"/>
+	</line>
+	<line label="" cols="1">
+		<item type="Textbox" id="txt_email" name="Email" allownull="no" validate="email" label="Email" defaul_value="" size="40" css="" view="true"/>
+	</line>
+</form>

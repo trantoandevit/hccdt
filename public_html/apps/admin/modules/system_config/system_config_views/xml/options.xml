@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <line label="Cache" cols="1">
+        <item type="Checkbox" value="1" id="cache_mode" validate="" title="Bật chế độ ghi trước nội dung thông tin ra bộ đệm (Lưu Cache)" label="" view="true"/>
+    </line>
+    <line label="Chế độ xem tin" cols="1">
+        <item type="Textbox" id="homepage_article_per_category" allownull="yes" validate="text" label="Số tin bài hiển thị trong mỗi chuyên mục trên trang chủ"  size="8" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Textbox" id="archive_article_per_category" allownull="yes" validate="text" label="Số tin bài hiển thị trong mỗi chuyên mục (trang trong)"  size="8" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Textbox" id="limit_display_staff_on_home_page" allownull="yes" validate="text" label="Số cán bộ đánh giá tốt hiển thị trên trang chủ"  size="8" view="true"/>
+    </line>
+    <line label="Thông tin về Email" cols="1">
+        <item type="Textbox" id="email_address" allownull="yes" validate="text" label="Địa chỉ hòm thư"  size="50" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Textbox" id="email_server" allownull="yes" validate="text" label="Địa chỉ máy chủ SMTP"  size="50" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Textbox" id="email_server_port" allownull="yes" validate="text" label="Cổng"  size="50" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Checkbox" id="email_server_ssl" allownull="yes" validate="text" title="Sử dụng SSL"  size="50" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Textbox" id="email_account" allownull="yes" validate="text" label="Tên đăng nhập"  size="50" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Password" id="email_password" allownull="yes" validate="text" label="Mật khẩu"  size="50" view="true"/>
+    </line>
+    <line label="Biểu tượng tin bài mới" cols="2">
+        <item type="Checkbox" value="1" id="new_article_icon" validate="" title="Bật biểu tượng &quot;Tin bài mới&quot;" label="" view="true"/>
+        <item type="Textbox" id="new_article_cond" allownull="yes" validate="number" label="Số ngày hiển thị:"  size="5" view="true"/>
+    </line>
+    <line label="Thông tin liên hệ" cols="1">
+        <item type="Textbox" id="unit_name" allownull="yes" validate="text" label="Tên đơn vị"  size="50" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Textbox" id="unit_copyright" allownull="yes" validate="text" label="Thông tin bản quyền"  size="50" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Textbox" id="unit_address" allownull="yes" validate="text" label="Địa chỉ"  size="50" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Textbox" id="unit_phone" allownull="yes" validate="text" label="Điện thoại"  size="50" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Textbox" id="unit_fax" allownull="yes" validate="text" label="Fax"  size="50" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Textbox" id="unit_email" allownull="yes" validate="text" label="Email"  size="50" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Textbox" id="unit_website" allownull="yes" validate="text" label="webiste"  size="50" view="true"/>
+    </line>
+<!--    <line label="Tên đơn vị hiển thị hướng dẫn thủ tục hành chính" cols="1">
+        <item type="Textbox" id="guidance_unit_name" allownull="yes" validate="text" label="Tiêu đề"  size="50" view="true"/>
+    </line>-->
+	   <line label="Tên đơn vị cung cấp tình hình giải quyết thủ tục hành chính" cols="1">
+        <item type="Textbox" id="unit_name_services" allownull="yes" validate="text" label="Đơn vị"  size="50" view="true"/>
+    </line>
+</form>

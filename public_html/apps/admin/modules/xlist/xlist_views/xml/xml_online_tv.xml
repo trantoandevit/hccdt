@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <line label="Địa chỉ liên kết" cols="1">
+        <item type="Textbox" id="txt_online_tv_url" name="Địa chỉ liên kết" allownull="no" validate="text" label="Địa chỉ liên kết:" defaul_value="" size="120" css="" view="true" doc="false"/>     
+    </line>
+    <line label="Ảnh logo" cols="1">
+        <item type="Textbox" id="txt_online_tv_logo" name="Ảnh logo" allownull="no" validate="text" label="Ảnh logo:" defaul_value="" size="120" css="" view="true" doc="false"/>     
+    </line>
+</form>

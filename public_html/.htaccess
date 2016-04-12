@@ -1,0 +1,180 @@
+RewriteEngine On
+
+RewriteBase /hcc-bacgiang/
+
+#Deny bad user-agent
+#SetEnvIfNoCase User-Agent "^$" bad_user
+#Deny from env=bad_user
+
+#Uncomment If maintenance Mode
+#RewriteCond %{REQUEST_URI} !/maintenance
+#RewriteRule $ http://baohaiduong.vn/maintenance [R=302,L]
+
+#Bo www
+#RewriteCond %{HTTP_HOST} ^www.baohaiduong.vn
+#RewriteRule (.*) http://baohaiduong.vn/$1 [R=301,L]
+
+#RewriteCond %{HTTP_HOST} ^www.baohaiduong.com.vn
+#RewriteRule (.*) http://baohaiduong.vn/$1 [R=301,L]
+
+#RewriteCond %{HTTP_HOST} ^baohaiduong.com.vn
+#RewriteRule (.*) http://baohaiduong.vn/$1 [R=301,L]
+
+RewriteRule cgi-sys/defaultwebpage\.cgi$ / [R=301,L]
+RewriteRule dvc-bacgiang/upload/(.*)$  upload/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule .* - [S=1000]
+
+#Fake theme url
+RewriteRule ^templates/(dvc|dvc_en|dvc_bacgiang|dvc_bg_red|dvc_hoabinh)/(.*)$ apps/frontend/themes/$1/$2 [L]
+
+#home-page
+RewriteRule ^([0-9]+)$ index.php?url=frontend/frontend/&website_id=$1 [QSA,L]
+
+#nop_ho_so
+RewriteRule ^dich_vu_cong/huong_dan$ index.php?url=frontend/frontend/redirect_internet_record/dsp_guidance_internet_record [QSA,L]
+RewriteRule ^dich_vu_cong$ index.php?url=frontend/frontend/redirect_internet_record/dsp_guidance_internet_record [QSA,L]
+
+#danh sach hs nop truc tuyen
+RewriteRule ^dich_vu_cong/danh_sach$ index.php?url=frontend/frontend/redirect_internet_record/dsp_list_internet_record&member_id=0 [QSA,L]
+RewriteRule ^dich_vu_cong/danh_sach/([0-9]+)$ index.php?url=frontend/frontend/redirect_internet_record/dsp_list_internet_record&member_id=$1 [QSA,L]
+RewriteRule ^dich_vu_cong/danh_sach/([0-9]+)-([A-Z0-9]+)$ index.php?url=frontend/frontend/redirect_internet_record/dsp_list_internet_record&member_id=$1&spec_code=$2 [QSA,L]
+
+#nop hs truc tuyen
+RewriteRule ^dich_vu_cong/nop_ho_so/$ index.php?url=frontend/frontend/redirect_internet_record/dsp_submit_internet_record [QSA,L]
+RewriteRule ^dich_vu_cong/nop_ho_so/([0-9]+)$ index.php?url=frontend/frontend/redirect_internet_record/dsp_submit_internet_record&record_type=$1 [QSA,L]
+RewriteRule ^dich_vu_cong/nop_ho_so/([0-9]+)-([0-9]+)$ index.php?url=frontend/frontend/redirect_internet_record/dsp_submit_internet_record&record_type=$1&member_id=$2 [QSA,L]
+
+#tra cuu tong hop
+RewriteRule ^tra_cuu_tong_hop/([0-9]+)$ index.php?url=frontend/frontend/dsp_synthesis&type=member&website_id=$1 [QSA,L]
+RewriteRule ^tra_cuu_tong_hop/tong_hop_theo_don_vi/([a-z_]+)/([0-9]+)$ index.php?url=frontend/frontend/dsp_synthesis&type=member&method=$1&website_id=$2 [QSA,L]
+RewriteRule ^tra_cuu_tong_hop/tong_hop_theo_linh_vuc/([a-z_]+)/([0-9]+)$ index.php?url=frontend/frontend/dsp_synthesis&type=spec&method=$1&website_id=$2 [QSA,L]
+RewriteRule ^tra_cuu_tong_hop/bang_theo_doi_truc_tuyen/([0-9]+)$ index.php?url=frontend/frontend/dsp_synthesis&type=liveboard&website_id=$1 [QSA,L]
+RewriteRule ^tra_cuu_tong_hop/bieu_do_thong_ke/([a-z_]+)/([0-9]+)$ index.php?url=frontend/frontend/dsp_synthesis&type=chart&method=$1&website_id=$2 [QSA,L]
+
+#tra cuu chi tiet hs qua ma vach
+RewriteRule ^tra_cuu_ho_so$ index.php?url=frontend/frontend/dsp_lookup [QSA,L]
+
+
+
+#category with date
+RewriteRule ^chuyen-muc/(.+)/([0-9]+)-([0-9]+)/date([0-9]{8})$ index.php?url=frontend/frontend/dsp_single_category/&website_id=$2&category_id=$3&date=$4 [QSA,L]
+
+#category
+RewriteRule ^chuyen-muc/(.+)/([0-9]+)-([0-9]+)$ index.php?url=frontend/frontend/dsp_single_category/&website_id=$2&category_id=$3 [QSA,L]
+RewriteRule ^chuyen-muc/(.+)/([0-9]+)-([0-9]+)/([0-9]+)$ index.php?url=frontend/frontend/dsp_single_category/&website_id=$2&category_id=$3&page=$4 [QSA,L]
+
+#event
+RewriteRule ^su-kien/(.+)/([0-9]+)-([0-9]+)$ index.php?url=frontend/frontend/dsp_single_event/&website_id=$2&event_id=$3 [QSA,L]
+RewriteRule ^su-kien/(.+)/([0-9]+)-([0-9]+)/([0-9]+)$ index.php?url=frontend/frontend/dsp_single_event/&website_id=$2&event_id=$3&page=$4 [QSA,L]
+
+#article
+RewriteRule ^tin-bai/(.+)/(.+)/([0-9]+)-([0-9]+)-([0-9]+)$ index.php?url=frontend/frontend/dsp_single_article/&website_id=$3&category_id=$4&article_id=$5 [QSA,L]
+
+#print
+RewriteRule ^in-trang/(.+)/(.+)/([0-9]+)-([0-9]+)-([0-9]+)$ index.php?url=frontend/frontend/dsp_print_article/&website_id=$3&category_id=$4&article_id=$5 [QSA,L]
+
+#photo gallery
+RewriteRule ^phong-su-anh/(.+)/([0-9]+)-([0-9]+)$ index.php?url=frontend/frontend/dsp_single_gallery/&website_id=$2&gallery_id=$3 [QSA,L]
+
+#all photo gallery
+RewriteRule ^danh-sach-phong-su-anh/([0-9]+)$ index.php?url=frontend/frontend/dsp_all_gallery/&website_id=$1 [QSA,L]
+
+#all img news
+RewriteRule ^danh-sach-tin-anh/([0-9]+)$ index.php?url=frontend/frontend/dsp_all_img_news/&website_id=$1 [QSA,L]
+
+#search
+RewriteRule ^tim-kiem/([0-9]*)(.*)$ index.php?url=frontend/frontend/dsp_search/&website_id=$1 [QSA,L]
+
+#all rss
+RewriteRule ^rss/([0-9]+)$ index.php?url=frontend/frontend/dsp_all_rss/&website_id=$1 [QSA,L]
+
+#rss
+RewriteRule ^rss/(.+)/([0-9]+)-([0-9]+)$ index.php?url=frontend/frontend/dsp_rss/&website_id=$2&category_id=$3 [QSA,L]
+
+#all category(mobile)
+RewriteRule ^ds-chuyen-muc/([0-9]+)(.*)$ index.php?url=frontend/frontend/dsp_all_category/&website_id=$1 [QSA,L]
+
+#citizens question
+RewriteRule ^hoi-dap/([0-9]+)(.*)$ index.php?url=frontend/frontend/dsp_all_cq/&website_id=$1 [QSA,L]
+
+#citizens field
+RewriteRule ^hoi-dap/linh-vuc/([0-9]+)-([0-9]+)$ index.php?url=frontend/frontend/dsp_all_cq/&website_id=$1&field_id=$2 [QSA,L]
+RewriteRule ^hoi-dap/linh-vuc/([0-9]+)-([0-9]+)/([0-9]+)$ index.php?url=frontend/frontend/dsp_all_cq/&website_id=$1&field_id=$2&page=$3 [QSA,L]
+#set question
+RewriteRule ^dat-cau-hoi/([0-9]+)(.*)$ index.php?url=frontend/frontend/dsp_set_question/&website_id=$1 [QSA,L]
+
+#citizens question detail
+RewriteRule ^tra-loi/(.+)/([0-9]+)-([0-9]+)(.*)$ index.php?url=frontend/frontend/dsp_single_cq/&slug_cq=$1&website_id=$2&cq_id=$3 [QSA,L]
+
+#tag
+RewriteRule ^tags/(.+)/([0-9]+)$ index.php?url=frontend/frontend/dsp_tags/&tags=$1&website_id=$2 [QSA,L]
+RewriteRule ^tags/(.+)/([0-9]+)-([0-9]+)$ index.php?url=frontend/frontend/dsp_tags/&tags=$1&website_id=$2&page=$3 [QSA,L]
+
+#office info
+RewriteRule ^thong-tin-toa-soan/([0-9]+)-([0-9]+)-([0-9]+)$ index.php?url=frontend/frontend/dsp_office_info/&website_id=$1&category_id=$2&article_id=$3 [QSA,L]
+
+#all sitemap
+RewriteRule ^sitemap/([0-9]+)$ index.php?url=frontend/frontend/dsp_all_sitemap/&website_id=$1 [QSA,L]
+
+#all feedback
+RewriteRule ^feedback/send/([0-9]+)$ index.php?url=frontend/frontend/dsp_feedback/&website_id=$1 [QSA,L]
+RewriteRule ^feedback/([0-9]+)$ index.php?url=frontend/frontend/dsp_all_feedback/&website_id=$1 [QSA,L]
+RewriteRule ^feedback/([0-9]+)-([0-9]+)$ index.php?url=frontend/frontend/dsp_all_feedback/&website_id=$1&page=$2 [QSA,L]
+
+#all guidance
+RewriteRule ^huong-dan-thu-tuc$ index.php?url=frontend/frontend/dsp_guidance/ [QSA,L]
+RewriteRule ^huong-dan-thu-tuc/([0-9]+)$ index.php?url=frontend/frontend/dsp_guidance/&page=$1 [QSA,L]
+RewriteRule ^huong-dan-thu-tuc/chi-tiet/([0-9]+)$ index.php?url=frontend/frontend/dsp_single_guidance/&record_type_id=$1 [QSA,L]
+
+
+#all survey
+RewriteRule ^cau-hoi-khao-sat/([0-9]+)$ index.php?url=frontend/frontend/dsp_survey/&website_id=$1 [QSA,L]
+##RewriteRule ^cau-hoi-khao-sat?sel_survey=([0-9]+)$ index.php?url=frontend/frontend/dsp_survey/&sel_survey=$1 [QSA,L]
+RewriteRule ^cau-hoi-khao-sat/gui-dap-an/([0-9]+)$ index.php?url=frontend/frontend/do_update_answer/&survey_id=$1 [QSA,L]
+
+#Danh gia can bo
+RewriteRule ^danh-gia-can-bo/$ index.php?url=frontend/frontend/dsp_all_scope [QSA,L]
+RewriteRule ^danh-gia-can-bo/can-bo/([0-9]+)$ index.php?url=frontend/frontend/dsp_single_staff/&staff_id=$1 [QSA,L]
+RewriteRule ^danh-gia-can-bo/can-bo/update_vote$ index.php?url=frontend/frontend/dsp_update_vote/ [QSA,L]
+RewriteRule ^danh-gia-can-bo/huong-dan-danh-gia$ index.php?url=frontend/frontend/dsp_assessment_guidelines/ [QSA,L]
+RewriteRule ^danh-gia-can-bo/ket-qua-danh-gia/$ index.php?url=frontend/frontend/dsp_evaluation_results/ [QSA,L]
+RewriteRule ^danh-gia-can-bo/ket-qua-danh-gia/([0-9]+)$ index.php?url=frontend/frontend/dsp_evaluation_results/&staff_id=$1 [QSA,L]
+
+#Login
+RewriteRule ^do_login$ index.php?url=frontend/frontend/do_login [QSA,L]
+RewriteRule ^do_logout$ index.php?url=frontend/frontend/do_logout [QSA,L]
+RewriteRule ^do_upate_citizen_account$ index.php?url=frontend/frontend/do_upate_citizen_account [QSA,L]
+RewriteRule ^register$ index.php?url=frontend/frontend/register [QSA,L]
+RewriteRule ^do_register$ index.php?url=frontend/frontend/do_register [QSA,L]
+RewriteRule ^send_code_trigger$ index.php?url=frontend/frontend/send_code_trigger [QSA,L]
+
+RewriteRule ^update_account_trigger$ index.php?url=frontend/frontend/update_account_trigger [QSA,L]
+RewriteRule ^tai-khoan/tim-mat-khau$ index.php?url=frontend/frontend/dsp_account_help [QSA,L]
+
+RewriteRule ^tai-khoan/lich-su-giao-dich$ index.php?url=frontend/frontend/dsp_history_filing [QSA,L]
+
+
+RewriteRule ^tai-khoan/chi-tiet$ index.php?url=frontend/frontend/dsp_single_account [QSA,L]
+#Xac nhan doi email
+RewriteRule ^tai-khoan/xac-nhan-doi-email/(.*)-([0-9]+)$ index.php?url=frontend/frontend/dsp_active_change_email/&username=$1&id=$2 [QSA,L]
+#Gui lại ma xac nhan doi email
+RewriteRule ^tai-khoan/gui-ma-xac-nhan-doi-email$ index.php?url=frontend/frontend/send_email_activation_code [QSA,L]
+#Huy doi email
+RewriteRule ^tai-khoan/huy-xac-nhan-doi-email/(.*)-([0-9]+)$ index.php?url=frontend/frontend/dsp_destroyed_change_email/&username=$1&id=$2 [QSA,L]
+#kich hoat tai khoan
+RewriteRule ^tai-khoan/kich-hoat/(.*)$ index.php?url=frontend/frontend/dsp_do_account_trigger/&username=$1 [QSA,L]
+#lấy lại password
+RewriteRule ^tai-khoan/doi-mat-khau/(.*)/(.*)$ index.php?url=frontend/frontend/dsp_change_password/&email=$1&v_code=$2 [QSA,L]
+
+#admin
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+# Cache video
+<filesMatch ".(avi|flv)$">
+    Header set Cache-Control "max-age=29030400, public"
+</filesMatch>

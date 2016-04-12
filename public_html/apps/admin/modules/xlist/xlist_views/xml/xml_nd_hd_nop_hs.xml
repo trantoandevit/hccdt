@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<line label="Nội dung hướng dẫn nộp hồ sơ trực tuyến" cols="1">
+		<item type="TextboxArea" editor="true" id="txt_guidance" name="Nội dung" allownull="no" validate="text" label="Nội dung:" defaul_value="" size="80" css="" view="true"/>
+	</line>
+</form>

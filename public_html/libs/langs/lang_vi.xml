@@ -1,0 +1,477 @@
+<lang name="vi">
+    <!-- Dung thuong xuyen -->
+    
+    <text name="advanced search" value="Tìm kiếm nâng cao"/>
+    <text name="account" value="Tài khoản"/>
+    <text name="help" value="Trợ giúp"/>
+    <text name="logout" value="Thoát"/>
+    <text name="information" value="Thông báo"/>
+    <text name="edit" value="Sửa"/>
+    <text name="update" value="Cập nhật"/>
+    <text name="apply" value="Ghi lại"/>
+    <text name="select" value="Chọn"/>
+    <text name="delete" value="Xoá"/>
+    <text name="add new" value="Thêm mới"/>
+    <text name="sending" value="Đang gửi"/>
+    <text name="submit" value="Đồng ý"/>
+    <text name="please fill all required fields" value="Mời bạn nhập đủ các trường yêu cầu"/>
+    <text name="goback" value="Quay lại"/>
+    <text name="goback to list" value="Danh sách"/>
+    <text name="close window" value="Đóng cửa sổ"/>
+    <text name="quick search" value="Tìm kiếm nhanh"/>
+    <text name="cancel" value="Bỏ qua"/>
+    <text name="processing" value="Đang xử lý"/>
+    <text name="order" value="Thứ tự hiển thị"/>
+    <text name="close" value="Đóng"/>
+    <text name="Update error, please check all required field" value="Cập nhật thất bại, mời bạn điền đủ các trường"/>
+    <text name="update error" value="Có lỗi xảy ra trong quá trình cập nhật"/>
+    <text name="order1" value="Sắp xếp"/>
+    <text name="search" value="Tìm kiếm"/>
+    <text name="quantity" value="Số lượng"/>
+    <text name="more" value="Xem thêm"/>
+    <text name="all" value="Tất cả"/>
+    <text name="are you sure to delete all selected object?" value="Bạn chắc chắn xoá đối tượng đã chọn?"/>
+    <text name="you must delete child object before delete this:" value="Bạn cần xóa đối tượng con trước:"/>
+    <text name="you must choose atleast one object" value="Bạn cần chọn ít nhất một đối tượng!"/>
+    <text name="there are no record" value="Hiện tại không có bản ghi nào"/>
+    <text name="all change will be lost, continue?" value="Thay đổi của bạn sẽ không được lưu, tiếp tục?"/>
+    <text name="you dont have access right on this function" value="Bạn không có quyền truy cập vào chức năng này!"/>
+    <text name="this object is nolonger available!" value="Đối tượng này không còn tồn tại!"/>
+    <text name="status" value="Trạng thái"/>
+    <text name="default" value="Mặc định"/>
+    <text name="detail" value="Chi tiết"/>
+    <text name="active status" value="Hoạt động"/>
+    <text name="inactive status" value="Không hoạt động"/>
+    <text name="description" value="Mô tả"/>
+    <text name="yes" value="Có"/>
+    <text name="no" value="Không"/>
+    <text name="at" value="Tại"/>
+    <text name="filter" value="Lọc"/>
+    <text name="save and add new" value="Ghi và thêm mới"/>
+    <text name="add new" value="Thêm mới"/>
+    <text name="go back" value="Quay lại"/>
+    <text name="choose file" value="Chọn file"/>
+    <text name="page" value="Trang"/>
+    <text name="record" value="Bản ghi"/>
+    <text name="display" value="Hiển thị"/>
+    <text name="display none" value="Không hiển thị"/>
+    <text name="go to" value="Chuyển tới"/>
+    <text name="total" value="Tổng số"/>
+    <text name="show in homepage" value="Hiện ở trang chủ"/>
+    <text name="name" value="Tên"/>
+    <text name="invalid request data" value="Dữ liệu nhập vào không hợp lệ!"/>
+    <text name="update success" value="Cập nhật thành công"/>
+    <text name="update fail" value="Có lỗi xảy ra khi cập nhật !"/>
+    <text name="confirm" value="Xác nhận"/>
+    <text name="choose image" value="Chọn ảnh"/>
+    <text name="begin date" value="Ngày bắt đầu"/>
+    <text name="end date" value="Ngày kết thúc"/>
+    <text name="url" value="Địa chỉ liên kết"/>
+    <text name="home page" value="Trang chủ"/>
+    <text name="report" value="Phóng sự"/>
+    <text name="save cache html" value="Lưu cache"/>
+
+    <!--  Quan tri login -->
+    <text name="title login" value="Đăng nhập hệ thống"/>
+    <!--  Quan tri user -->
+    <text name="check password" value="Độ dài mật khẩu lớn hơn 5 ký tự"/>
+    <text name="check confirm password" value="Xác nhận mật khẩu không đúng"/>
+    <text name="check button update" value="Thông tin về mật khẩu chưa đúng !!!!"/>
+    <text name="confirm new password" value="Xác nhận mật khẩu"/>
+    <text name="user managerment" value="Quản trị người dùng"/>
+    <text name="user" value="Người dùng"/>
+    <text name="user name" value="Tên người dùng"/>
+    <text name="add user" value="Thêm người dùng"/>
+    <text name="user info" value="Thông tin người dùng"/>
+    <text name="user group" value="Nhóm người dùng"/>
+    <text name="user permit" value="Phân quyền người dùng"/>
+    <text name="user job title" value="Chức danh"/>
+    <text name="ou" value="Đơn vị/Phòng ban"/>
+    <text name="Add OU" value="Thêm đơn vị"/>
+    <text name="parent ou" value="Trực thuộc"/>
+    <text name="insert ou" value="Thêm Đơn vị/Phòng ban"/>
+    <text name="ou name" value="Tên đơn vị"/>
+    <text name="group" value="Nhóm"/>
+    <text name="group code" value="Mã nhóm"/>
+    <text name="group name" value="Tên nhóm"/>
+    <text name="group info" value="Thông tin nhóm"/>
+    <text name="group user" value="Thành viên"/>
+    <text name="add group" value="Thêm nhóm"/>
+    <text name="add user group" value="Thêm Nhóm người dùng"/>
+    <text name="user type" value="Loại"/>
+    <text name="user ou type" value="Đơn vị hành chính"/>
+    <text name="user group type" value="Nhóm người dùng"/>
+    <text name="update ou info" value="Cập nhật thông tin đơn vị"/>
+    <text name="update ou" value="Cập nhật đơn vị"/>
+    <text name="user personal info" value="Thông tin cá nhân NSD"/>
+    <text name="in group" value="Thuộc các nhóm"/>
+    <text name="init date" value="Ngày tạo"/>
+    <text name="new window" value="Cửa sổ mới"/>
+    <text name="grant permission to user" value="Phân quyền cho NSD"/>
+    <text name="login name" value="Tên đăng nhập"/>
+    <text name="password" value="Mật khẩu"/>
+    <text name="confirm password" value="Xác nhận mật khẩu"/>
+    <text name="join group" value="Thêm nhóm"/>
+    <text name="leave group" value="Bỏ nhóm"/>
+    <text name="in ou" value="Thuộc đơn vị"/>
+    <text name="current password" value="Mật khẩu hiện hành"/>
+    <text name="new password" value="Mật khẩu mới"/>
+    <text name="select application" value="Chọn ứng dụng"/>
+    <text name="members" value="Thành viên"/>
+    <text name="grant permission to group" value="Phân quyền cho nhóm"/>
+    <text name="select website" value="Chọn chuyên trang" />
+    <text name="update user group info" value="Cập nhật thông tin nhóm" />
+    <text name="add user to group" value="Thêm người dùng" />
+    <text name="remove user from group" value="Xoá người dùng" />
+    <!--  Danh muc -->
+    <text name="listtype" value="Loại danh mục" />
+    <text name="list" value="Đối tượng danh mục"/>
+    <text name="listtype manager" value="Quản trị loại danh mục" />
+    <text name="filter by listtype name" value="Lọc theo tên loại danh mục" />
+    <text name="list manager" value="Quản trị đối tượng danh mục" />
+    <text name="filter by list name" value="Lọc theo tên danh mục" />
+    <text name="update listtype" value="Cập nhật loại danh mục" />
+    <text name="listtype code" value="Mã loại danh mục" />
+    <text name="listtype name" value="Tên loại danh mục" />
+    <text name="list code" value="Mã danh mục" />
+    <text name="list name" value="Tên danh mục" />
+
+    <!--  Chuyen trang -->
+    <text name="website manager" value="Quản trị chuyên trang" />
+    <text name="update website" value="Cập nhật chuyên trang" />
+    <text name="website code" value="Mã chuyên trang" />
+    <text name="website name" value="Tên chuyên trang" />
+    <text name="monitor user" value="Người phụ trách" />
+    <text name="choose a theme" value="Chọn giao diện" />
+    <text name="website" value="Chuyên trang" />
+
+    <!--weblink -->
+    <text name="weblink" value="Liên kết web"/>
+    <text name="web link" value="Liên kết web"/>
+
+    <!-- chuyen muc -->
+    <text name="category" value="Chuyên mục" />
+    <text name="category list" value="Danh sách chuyên mục"/>
+    <text name="choose category" value="Chọn chuyên mục"/>
+    <text name="category name" value="Tên chuyên mục" />
+    <text name="root category" value="Chuyên mục gốc" />
+    <text name="parent category" value="Thuộc chuyên mục"/>
+    <text name="category management" value="Quản lý Chuyên mục" />
+    <text name="is video category" value="Chuyên mục video"/>
+    <text name="featured category" value="Chuyên mục nổi bật"/>
+
+    <!-- su kien-->
+    <text name="event" value="Sự kiện" />
+    <text name="event manager" value="Quản lý sự kiện" />
+    <text name="event name" value="Tên sự kiện" />
+    <text name="total record" value="Tổng số bài" />
+    <text name="event detail" value="Chi tiết sự kiện" />
+    <text name="is report" value="Là phóng sự" />
+    <text name="report" value="Phóng sự" />
+
+    <!-- Anh quang cao-->
+    <text name="advertising" value="Ảnh quảng cáo" />
+    <text name="advertising manager" value="Quản lý ảnh quảng cáo" />
+    <text name="position name" value="Tên vị trí: " />
+    <text name="delete position" value="Xoá vị trí" />
+    <text name="advertising name" value="Tên quảng cáo" />
+    <text name="advertising detail" value="Chi tiết ảnh quảng cáo" />
+
+    <!-- Banner-->
+    <text name="banner manager" value="Quản lý Banner" />
+    <text name="banner image" value="Hình ảnh" />
+    <text name="banner detail" value="Chi tiết Banner" />
+    <text name="banner default" value="Banner mặc định" />
+    
+    <!--widget media_article-->
+    <text name="video limit" value="Hạn chế số lượng video"/>
+    <text name="gallery limit" value="Hạn chế số lượng phóng sự ảnh"/>
+    
+    <!--advmedia-->
+    <text name="left pane" value="Hiện/ẩn thanh trái"/>
+    <text name="pick file(s)" value="Chọn file"/>
+    <text name="new directory" value="Tạo thư mục mới"/>
+    <text name="folders" value="Danh sách thư mục"/>
+    <text name="root directory" value="Thư mục gốc"/>
+    <text name="{drag text}" value="Bấm vào đây hoặc thả file để Upload"/>
+    <text name="item name" value="Tên"/>
+    <text name="item type" value="Loại"/>
+    <text name="modified" value="Ngày cập nhật"/>
+    <text name="directory" value="Thư mục"/>
+    <text name="uploaded" value="Tải thành công"/>
+    <text name="please enter folder name" value="Mời bạn nhập tên thư mục"/>
+    <text name="up" value="Lên trên"/>
+    <text name="this directory has been moved or deleted" value="Thư mục này đã bị di chuyển hoặc xoá"/>
+    <text name="click here to return to root" value="Bấm vào đây để trở về thư mục gốc"/>
+    <text name="parent directory not exists" value="Thư mục cấp trên không tồn tại"/>
+    <text name="directory already exists" value="Tên thư mục đã tồn tại"/>
+    <text name="directory not empty" value="Không thể xoá (thư mục chưa rỗng)"/>
+    <text name="directory creation failed" value="Tạo thư mục thất bại"/>
+    <text name="error removing directory" value="Xảy ra lỗi khi xoá thư mục"/>
+    <text name="up a level" value="Về thư mục cha"/>
+
+    <!-- binh luan-->
+    <text name="comment" value="Bình luận" />
+
+    <!-- Tin bai-->
+    <text name="article" value="Tin bài" />
+    <text name="restore" value="Khôi phục"/>
+    <text name="this title already exists" value="Tiêu đề này đã tồn tại"/>
+    <text name="article number" value="Tổng số tin bài"/>
+    <text name="article management" value="Quản lý tin bài"/>
+    <text name="init" value="Khởi tạo"/>
+    <text name="details" value="Chi tiết"/>
+    <text name="pen name" value="Bút danh"/>
+    <text name="action" value="Hành động"/>
+    <text name="attachment" value="Đính kèm"/>
+    <text name="date" value="Ngày"/>
+    <text name="month" value="Tháng"/>
+    <text name="year" value="Năm"/>
+    <text name="title" value="Tiêu đề"/>
+    <text name="comment" value="Lời bình"/>
+    <text name="related news" value="Tin liên quan"/>
+    <text name="message" value="Lời nhắn"/>
+    <text name="editor" value="Người duyệt"/>
+    <text name="begin date" value="Ngày bắt đầu"/>
+    <text name="init user" value="Người tạo"/>
+    <text name="sub title" value="Tiêu đề phụ"/>
+    <text name="summary" value="Tóm tắt"/>
+    <text name="content" value="Nội dung"/>
+    <text name="author" value="Tác giả"/>
+    <text name="keywords" value="Từ khóa"/>
+    <text name="thumbnail" value="Ảnh đại diện"/>
+    <text name="general info" value="Thông tin chung"/>
+    <text name="preview" value="Xem trước"/>
+    <text name="edit article" value="Biên tập"/>
+    <text name="version" value="Phiên bản"/>
+    <text name="publish time range" value="Thời gian đăng"/>
+    <text name="end date" value="Ngày kết thúc"/>
+    <text name="add article" value="Thêm tin bài"/>
+    <text name="has video" value="Tin bài có video"/>
+    <text name="has gallery" value="Tin bài có bộ ảnh"/>
+
+    <text name="draft" value="Viết nháp"/>
+    <text name="editing" value="Đang biên tập"/>
+    <text name="censoring" value="Đang kiểm duyệt"/>
+    <text name="published" value="Đã xuất bản"/>
+    <text name="file attach" value="File đính kèm"/>
+
+    <!-- Tin bai noi bat-->
+    <text name="sticky" value="Tin bài nổi bật" />
+    <text name="homepage sticky" value="Tin nổi bật của trang chủ"/>
+    <text name="category sticky" value="Tin nổi bật của chuyên mục"/>
+    
+    <!--statistic-->
+    <text name="statistic" value="Thống kê truy cập" />
+    <text name="viewing" value="Đang xem" />
+    <text name="web counter" value="Số lượt truy cập" />
+    
+    <!--TIn thu-->
+    <text name="digest" value="Tin thư"/>
+    <text name="subscriber info" value="Thông tin người đăng ký"/>
+    <text name="{subscribe intro}" value="Đặt báo định kỳ trên baolangson.vn để nhận được tin bài hay nhất trong tuần qua email hoàn toàn miễn phí"/>
+    <text name="authorise this person" value="Xác thực cho người này"/>
+    <text name="error occur during update, please try again later" value="Xảy ra lỗi trong quá trình cập nhật, xin thử lại vào lần sau"/>
+    <text name="you are subscribed to email updates from" value="Bạn đã đăng ký nhận tin thư tại"/>
+    <text name="to stop receiving these emails, you may" value="Nếu không muốn nhận thêm email, bạn có thể"/>
+    <text name="posted" value="Đăng ngày"/>
+    <text name="auth_sub_thanks_msg" value="Cảm ơn bạn đã đăng ký dịch vụ gửi tin thư! Hãy vào hòm thư đăng ký để xem Email xác nhận, bạn có thể bấm vào đường dẫn trong Email hoặc nhập mã đăng ký tại đây:"/>
+    <text name="your message for subscriber (if leave blank, default message will be sent)" value="Lời nhắn gửi kèm (nếu để trống, hệ thống sẽ gửi lời nhắn mặc định)"/>
+    <text name="if at any time you wish to stop receiving our emails, you can:" value="Nếu muốn hủy nhận tin, bạn có thể:"/>
+    <text name="unsubscribe" value="Dừng dịch vụ"/>
+    <text name="digest service" value="Dịch vụ nhận tin qua mail"/>
+    <text name="begin send" value="Bắt đầu gửi"/>
+    <text name="send digest" value="Gửi tin thư"/>
+    <text name="subscriber list" value="Danh sách nhận tin"/>
+    <text name="authentication" value="Xác thực"/>
+    <text name="did not authorized" value="Chưa xác minh"/>
+    <text name="manual authentication" value="Xác thực thủ công"/>
+    <text name="email authentication" value="Xác thực bằng Mail"/>
+    <text name="mail sent" value="Gửi thư thành công"/>
+    <text name="please enter your email" value="Hãy nhập Email của bạn"/>
+    <text name="error during sending" value="Xảy ra lỗi khi gửi"/>
+    <text name="register code" value="Mã đăng ký"/>
+    <text name="subscribe" value="Đặt báo định kỳ"/>
+    <text name="subscriber_step1" value="Bước 1: Đăng ký thông tin bằng trang hiện tại, nếu
+đăng ký thành công bạn sẽ nhận được Email xác thực"/>
+    <text name="subscriber_step2" value="Bước 2: Đăng nhập vào Email đã đăng ký, click vào
+Đường dẫn để xác nhận thông tin nhập vào là chính xác
+Chú ý: nếu không thấy thư trong Inbox, bạn nên tìm trong
+Spam hoặc Bulk"/>
+    <text name="subscriber_step3" value="Bước 3: Thành công!"/>
+    <text name="subscriber_notice" value="Chú ý: nếu muốn hủy dịch vụ Email bạn có thể Click vào đường dẫn hủy trong Email nhận được hoặc "/>
+    <text name="register form" value="Phiếu đăng ký"/>
+    <text name="register guide" value="Hướng dẫn"/>
+    <text name="activate failed" value="Quá trình kích hoạt thất bại"/>
+    <text name="activate successful" value="Quá trình kích hoạt thành công"/>
+    <text name="please confirm subscription" value="Mời bạn xác nhận đăng ký"/>
+    <text name="register key" value="mã đăng ký"/>
+    
+    <!-- Tin anh -->
+    <text name="photo gallery" value="Phóng sự ảnh"/>
+    <text name="image list" value="Danh sách ảnh"/>
+    <text name="image" value="Ảnh"/>
+    <!-- Tin tieu diem -->
+    <text name="spotlight" value="Tin tiêu điểm"/>
+    <text name="spotlight position" value="Vị trí tiêu điểm"/>
+
+    <!--tiim kiem-->
+    <text name="search result" value="Kết quả tìm kiếm"/>
+    <text name="there are" value="Có"/>
+    <text name="result found" value="kết quả được tìm thấy"/>
+    
+    <!-- media-->
+    <text name="file name" value="Tên file" />
+    <text name="media" value="Media" />
+    <text name="media manager" value="Quản trị media" />
+    <text name="time to search" value="Thời gian đăng: " />
+    <text name="begin time to search" value="Từ ngày: " />
+    <text name="end time to search" value="Đến: " />
+    <text name="upload user" value="Người nhâp: " />
+    <text name="all user" value="---Tất cả người dùng---" />
+    <text name="date time" value="Ngày tháng" />
+    <text name="upload date" value="Ngày upload: " />
+    <text name="media detail" value="Ngày tháng" />
+    <text name="media detail" value="Ngày tháng" />
+    <text name="extension" value="Đuôi mở rộng" />
+    <text name="Upload/Insert Media" value="Thư viện" />
+    <text name="Upload Media" value="Tải file" />
+    <text name="Upload" value="Tải lên" />
+    <text name="Media" value="Thư viện" />
+    <text name="select avatar" value="Chọn ảnh đại diện"/>
+    
+    <!-- menu-->
+    <text name="menu" value="Menu" />
+    <text name="menu manager" value="Quản lý menu" />
+    <text name="theme position" value="Vị trí trên theme" />
+    <text name="menu detail" value="chi tiết menu" />
+    <text name="menu name" value="Tên menu" />
+    <text name="root menu" value="Menu gốc" />
+    <text name="the menu" value="Thuộc menu" />
+    <text name="kind of" value="Thể loại" />
+    <text name="select position" value="Chọn bộ menu" />
+    <text name="ministry menu name" value="Tên bộ menu: " />
+    <text name="delete ministry menu" value="Xoá bộ menu" />
+
+
+    <!-- poll Binh chon-->
+    <text name="poll" value="Thăm dò ý kiến" />
+    <text name="poll result" value="Kết quả thăm dò" />
+    <text name="poll manager" value="Quản lý bình chọn" />
+    <text name="You have voted for this poll" value="Bạn đã bình chọn rồi"/>
+    <text name="answer" value="Câu trả lời" />
+    <text name="this poll is expired" value="Câu hỏi này đã hết thời hạn"/>
+    <text name="see result" value="Xem kết quả"/>
+    <text name="vote" value="Bình chọn"/>
+    <text name="question" value="Câu hỏi" />
+    <text name="poll detail" value="Chi tiết bình chọn" />
+    <text name="add answer" value="Thêm câu trả lời" />
+    <text name="thank you for voting" value="Cảm ơn bạn đã bình chọn"/>
+    <!-- Thu vien anh-->
+    <text name="images lib" value="Thư viện ảnh" />
+    <text name="photos lib" value="Thư viện ảnh" />
+
+    <!-- Theme-->
+    <text name="theme" value="Theme" />
+    <!-- header-->
+    <text name="total pending articles" value="Tổng số tin bài chờ duyệt"/>
+    <text name="total redone articles" value="Tổng số tin bài phải sửa"/>
+    <text name="content management" value="Quản trị nội dung"/>
+    <text name="reader interaction" value="Tương tác bạn đọc"/>
+    <text name="system administration" value="Quản trị hệ thống"/>
+
+    <!-- Dashboard -->
+    <text name="system administration" value="Quản trị hệ thống"/>
+    <text name="position" value="Chức vụ"/>
+    <text name="unit" value="Đơn vị"/>
+    <text name="login times" value="Thời gian đăng nhập"/>
+    <text name="ip address" value="Địa chỉ ip"/>
+    <text name="list type" value="Loại danh mục"/>
+    <text name="login information" value="Thông tin đăng nhập"/>
+
+    <!--Widget-->
+    <text name="some gallery show" value="Số thư viện ảnh hiển thị"/>
+    <text name="woeid" value="Mã khu vực"/>
+    <text name="some news show" value="Số tin bài hiển thị"/>
+    <text name="online list type" value="Danh mục trực tuyến"/>
+    <text name="free text" value="Nội dung tự tạo"/>
+    <text name="support info" value="Thông tin cần biết"/>
+    <text name="TV schedule" value="Lịch truyền hình"/>
+    <text name="time" value="Thời gian"/>
+    <text name="show" value="Chương trình"/>
+    <text name="most visited" value="Xem nhiều nhất"/>
+    <text name="color style" value="Gam màu"/>
+    <text name="weather" value="Thời tiết"/>
+    <text name="gold price" value="Giá vàng"/>
+    <text name="exchange rate" value="Tỷ giá"/>
+    <text name="source" value="Nguồn"/>
+    <text name="type" value="Loại"/>
+    <text name="buy" value="Mua"/>
+    <text name="sell" value="Bán"/>
+    <text name="transfer" value="Chuyển khoản"/>
+    <text name="code" value="Mã"/>
+    <text name="available widgets" value="Widget có sẵn"/>
+    <text name="display mode" value="Kiểu hiển thị"/>
+    <text name="basic" value="Cơ bản"/>
+    <text name="advanced" value="Cao cấp"/>
+    <text name="widget tools" value="Công cụ cho widget"/>
+    <text name="total cached file" value="Số lượng file tự sinh"/>
+    <text name="total cached size" value="Dung lượng file tự sinh"/>
+    <text name="click to clean trash and refresh cached data" value="Thực hiện dọn rác và làm mới dữ liệu cache"/>
+
+    <!--front -->
+    <text name="print" value="In trang"/>
+    <text name="send email" value="Gửi bài qua email"/>
+    <text name="error occurs during sending" value="Có lỗi xảy ra trong quá trình gửi"/>
+    <text name="send you an article" value="gửi cho bạn bài báo"/>
+    <text name="with a message" value="Với lời nhắn"/>
+    <text name="send comment" value="Gửi phản hồi"/>
+    <text name="your comment has been sent" value="Phản hồi của bạn đã được gửi"/>
+    <text name="go top" value="Lên trên"/>
+    <text name="captcha" value="Mã xác thực"/>
+    <text name="captcha not valid" value="Mã xác thực chưa đúng"/>
+    <text name="view comment" value="Xem phản hồi"/>
+    <text name="your email" value="Email của bạn"/>
+    <text name="your name" value="Tên của bạn"/>
+    <text name="subject" value="Tiêu đề"/>
+    <text name="recent news" value="Tin mới cập nhật"/>
+    <text name="to" value="Tới (To)"/>
+    <text name="CC" value="Đồng gửi (CC)"/>
+    <text name="send" value="Gửi"/>
+    <text name="reset" value="Nhập lại"/>
+    <text name="new video" value="Video mới"/>
+
+    <text name="other news" value="Các tin bài khác"/>
+    <text name="article detail" value="Chi tiết tin bài"/>
+    <text name="photo gallery detail" value="Chi tiết phóng sự ảnh"/>
+    <text name="there is no comment" value="Không có phản hồi nào"/>
+    <text name="please enter captcha" value="Vui lòng nhập mã xác thực"/>
+    <text name="view by date" value="Xem theo ngày"/>
+    <text name="from date" value="Từ ngày"/>
+    <text name="to date" value="Đến ngày"/>
+
+    <text name="first page" value="Trang đầu"/>
+    <text name="last page" value="Trang cuối"/>
+    
+    <!--uncategoried-->
+    <text name="system config" value="Cấu hình hệ thống"/>
+    <text name="thank you for using our email function" value="Cảm ơn bạn đã sử dụng chức năng gửi thư"/>
+    <text name="save cache" value="Lưu cache"/>
+    <text name="votes" value="Bình chọn"/>
+    <text name="television" value="Truyền hình"/>
+	
+    <text name="switch to full version" value="Xem phiên bản đầy đủ"/>
+    <text name="switch to mobile version" value="Trở lại phiên bản di động"/>
+    
+    <!--rss-->
+    <text name="{rss introdution title}" value="RSS của Báo Lạng Sơn"/>
+    <text name="{rss introdution}" value="RSS viết tắt từ Really Simple Syndication là một tiêu chuẩn định dạng tài liệu dựa trên XML nhằm giúp người sử dụng dễ dàng cập nhật và tra cứu thông tin một cách nhanh chóng và thuận tiện nhất bằng cách tóm lược thông tin vào trong một đoạn dữ liệu ngắn gọn, hợp chuẩn. Dữ liệu này được các chương trình đọc tin chuyên biệt gọi là News reader phân tích và hiển thị trên máy tính của người sử dụng. Trên trình đọc tin này, người sử dụng có thể thấy những tin chính mới nhất, tiêu đề, tóm tắt và cả đường link để xem toàn bộ tin."/>
+    <text name="{rss channel title}" value="Các kênh RSS do Báo Lạng Sơn cung cấp"/>
+    <text name="{rss terms title}" value="Các điều khoản sử dụng"/>
+    <text name="{rss terms of use}" value="Các nguồn kênh tin được cung cấp miễn phí cho các cá nhân và các tổ chức phi lợi nhuận. Chúng tôi yêu cầu bạn cung cấp rõ các thông tin cần thiết khi bạn sử dụng các nguồn kênh tin này từ Báo Lạng Sơn.Báo Lạng Sơn có quyền yêu cầu bạn ngừng cung cấp và phân tán thông tin dưới dạng này ở bất kỳ thời điểm nào và với bất kỳ lý do nào."/>
+
+    <!--account citizen-->
+    <text name="register" value="Các điều khoản sử dụng"/>
+    
+    
+</lang>

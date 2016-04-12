@@ -1,0 +1,120 @@
+.cp-border
+{
+    width: 100%;
+    margin: 0;
+    border: 1px solid #E5E4E4;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px #848484;
+    border-right:none;
+}
+
+.cp-content
+{
+    margin: 5px;
+}
+.cp-content img
+{
+    max-width: 100%;
+}
+.cp-content pre
+{
+    border: none;
+    background: white;
+    font-family: Tahoma;
+    font-size: 10pt;
+    text-align: left;
+    clear: left;
+}
+.cp-content ul
+{
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+.cp-content ul li 
+{
+    width: 100%;
+    list-style-type: none;
+    border: 1px solid #D3D1D1;
+    border-radius: 8px;
+    height: 40px;
+    background: #000000 url(../images/bg-member.png) top left repeat-x;
+    margin: 8px 0px;
+}
+
+.cp-content ul li img
+{
+    width: auto;
+    height: auto;
+    margin: 0px 7px;
+}
+.cp-content ul li a
+{
+    text-transform: uppercase;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: #ff6e15;
+    padding-right: 5px;
+    text-decoration: none;
+    font-size: 10pt;
+    width: 100%;
+}
+
+/*menu side bar*/
+.cp-menu-side-bar
+{
+    margin: 5px;
+}
+.cp-menu-side-bar li
+{
+    background: #ffffff url(../images/LeftMenuHeaderSelectedBullet.gif);
+    background-repeat: no-repeat;
+    background-position: 15px 9px;
+    border-bottom: 1px rgba(47, 114, 169, 0.14) solid;
+    line-height: 24px
+}
+.cp-menu-side-bar a *
+{
+    width: 100%;
+    cursor: pointer
+}
+.cp-menu-side-bar li label
+{
+    font-family: Tahoma;
+    font-size: 10pt;
+    color: #4C5257;
+    margin: 0px 0px 0px 30px;
+    font-weight: bold;
+}
+.cp-menu-side-bar li label:hover,.cp-menu-side-bar li.active label 
+{
+    color: #FF6E15;
+}
+.cp-menu-side-bar-child li
+{
+    background-image: url(../images/LeftMenuItemBullet.gif);
+    background-position: 23px 8px;
+    background-color: rgb(255, 227, 186);
+    border-bottom: 1px white solid;
+}
+.cp-menu-side-bar-child li a
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #D35D06;
+    margin: 0px 0px 0px 35px;
+    line-height: 24px;
+}
+.cp-menu-side-bar-child li a.active
+{
+    text-decoration: underline !important;
+}
+/*end menu side bar*/
+
+/*label*/
+.width_50
+{
+    width: 50px;
+    margin: 5px 10px;
+}
+/*end label*/

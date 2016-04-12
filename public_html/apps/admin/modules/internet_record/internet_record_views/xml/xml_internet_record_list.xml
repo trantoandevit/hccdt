@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <display_all>
+        <list>
+            <!-- 3 item nay la bat buoc -->
+            <item type="primarykey" id="PK_RECORD" />
+            <item type="checkbox" id="PK_RECORD" size="3%"/>
+            <!-- ********************************************************* -->
+            <item type="text" id="C_RECORD_NO" name="Mã loại hồ sơ" size="17%"/>
+            <item type="text" id="C_CITIZEN_NAME" name="Người đăng ký" size="27%"/>
+            <item type="text" id="C_RETURN_EMAIL" name="Email" size="20%"/>
+            <item type="text" id="C_MEMBER_NAME" name="Đơn vị tiếp nhận" size="20%"/>
+            <item type="text" id="C_PROCESSING_RECORD" name="Tình trạng xử lý" size="20%"/>
+        </list>
+    </display_all>
+</root>

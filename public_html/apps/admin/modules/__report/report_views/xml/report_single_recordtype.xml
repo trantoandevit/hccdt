@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report layout="L"><!--P: Doc, L: Ngang-->
+    <head>
+        <tr>
+            <td size="5%" rowspan="2">STT</td>
+            <td size="30%" rowspan="2">Tên lĩnh vực</td>
+            <td size="6%" rowspan="2">Kỳ trước</td>
+            <td size="6%" rowspan="2">Tiếp nhận</td>            
+            <td size="18%" colspan="4">Đã giải quyết</td>            
+            <td size="24%" colspan="3">Đang giải quyết</td>            
+            <td size="18%" colspan="2">Tạm dừng</td>            
+            <td size="18%" colspan="2">Hủy hồ sơ</td>
+            <td size="11%" rowspan="2">Tỉ lệ trả sớm và đúng hạn</td>
+        </tr>
+       <tr>
+            <td>Sớm hạn</td>
+            <td>Đúng hạn</td>            
+            <td>Quá hạn</td>
+            <td>Đang chờ trả</td>
+                  
+            <td>Đúng hạn</td>
+            <td>Chậm tiến độ</td>
+            <td>Quá hạn</td>
+            
+            <td>Yêu cầu bổ sung</td>
+            <td>Thực hiện NVTC</td>
+            
+            <td>Từ chối</td>
+            <td>Công dân rút</td>
+        </tr>
+    </head>
+    <list>
+        <!-- 
+            Độ rộng cột trong báo cáo tính bằng pixel
+            Id: Mã trường dữ liệu tương ứng hiển thị 
+        -->
+        <item type="text" id="RN"           name="TT" size="5%" align="center" excel_width="21"/>
+        <!--<item type="text" id="C_NAME" value_default="" name="Lĩnh vực" size="30%" excel_width="83"/>-->
+        <item type="text" id="C_SPEC_NAME" value_default="" name="Lĩnh vực" size="30%" excel_width="83"/>
+        <item type="text" id="C_COUNT_KY_TRUOC" value_default="0" name="Rất tốt" size="6%" align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_TONG_TIEP_NHAN_TRONG_THANG" value_default="0" name="Rất tốt" size="6%" align="center" number_format="true" excel_width="18"/>
+        
+        <item type="text" id="C_COUNT_DA_TRA_KET_QUA_TRUOC_HAN" value_default="0" name="Đã trả kết quả trước hạn" size="6%" align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_DA_TRA_KET_QUA_DUNG_HAN" value_default="0" name="Đã trả kết quả đúng hạn" size="6%" align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_DA_TRA_KET_QUA_QUA_HAN" value_default="0" name="Đã trả kết quả quá hạn" size="6%" align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_DANG_CHO_TRA_KET_QUA" value_default="0" name="Đang chờ trả" size="6%" align="center" number_format="true" excel_width="18"/>
+        
+        <item type="text" id="C_COUNT_DANG_THU_LY_DUNG_TIEN_DO" value_default="0" name="Đang thụ lý đúng tiến độ" size="6%" align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_DANG_THU_LY_CHAM_TIEN_DO" value_default="0" name="Đang thụ lý đúng tiến độ" size="6%" align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_THU_LY_QUA_HAN" value_default="0" name="Đang thụ lý chậm tiến độ" size="6%" align="center" number_format="true" excel_width="18"/>
+        
+        <item type="text" id="C_COUNT_BO_SUNG" value_default="0" name="Bổ sung hồ sơ" size="6%" align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_THUE" value_default="0" name="Thực hiện NVTC" size="6%" align="center" number_format="true" excel_width="18"/>
+        
+        <item type="text" id="C_COUNT_TU_CHOI" value_default="0" name="Từ chối" size="6%" align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="C_COUNT_CONG_DAN_RUT" value_default="0" name="Công dân rút" size="6%" align="center" number_format="true" excel_width="18"/>
+        
+        <item type="text" id="C_COUNT_TY_LE" unit="%" value_default="0" name="Tỷ lệ trả HS đúng và sớn hạn" size="11%" align="center" number_format="false" excel_width="18"/>
+    </list>
+    <total>
+    </total>
+    <sub_total>
+    </sub_total>
+</report>

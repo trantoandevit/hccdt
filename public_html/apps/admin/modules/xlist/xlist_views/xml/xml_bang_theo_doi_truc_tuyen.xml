@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<line label="Bảng theo dõi trực tuyến" cols="1">
+		<item type="Textbox" id="txt_liveboard" name="link liên kết" allownull="no" validate="text" label="Link liên kết" defaul_value="" size="40" css="" view="true"/>
+	</line>
+</form>

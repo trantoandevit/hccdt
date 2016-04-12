@@ -1,0 +1,125 @@
+#lookup_content
+{
+    min-height: 200px
+}
+.div-lookup
+{
+    border: 1px solid #E4F4FF;
+    float: left;
+    width: 100%;
+}
+.div-lookup .lookup
+{
+    float: left;
+}
+
+.div-lookup .header
+{
+    background: url(../images/bg-header-lookup.png) top left repeat-x;
+    height: 30px;
+}
+.div-lookup .header label
+{
+    font-size: 12pt;
+    font-family: Tahoma;
+    font-weight: bold;
+    margin: 5px 30px;
+}
+.div-lookup form
+{
+    margin: 0;
+    padding: 10px;
+    margin-top: -15px;
+}
+.div-lookup form label
+{
+    font-family: Tahoma;
+    font-size: 12pt;
+    font-weight: 600;
+    width: 100%;
+    float: left;
+}
+
+.div-lookup form input , .div-lookup form select
+{
+    width: 100%;
+    height: 29px;
+    border: 1px solid #EBEBEB;
+    margin-bottom: 5px;
+    float: left;
+}
+
+.div-lookup form .button-lookup .col-md-6
+{
+    padding: 0;
+    margin: 10px 0px;
+}
+
+.div-lookup form .button-lookup a 
+{
+    color: #133491;
+    font-family: Tahoma;
+    font-size: 11pt;
+    font-weight: bold;
+    /*line-height: 43px;*/
+}
+.div-lookup form .button-lookup input[type="submit"]
+{
+    height: 27px;
+    width: 86px;
+    background: url(../images/bt-lookup.png) top left;
+    background-repeat: no-repeat;
+    border:0;
+    float:right;
+}
+
+.div-lookup .footer
+{
+    float:left;
+    margin: 5px 10px;
+    width: 95%;
+}
+.div-lookup .footer .icon-module 
+{
+    text-align: center;   
+}
+.div-lookup .footer .icon-module a
+{
+    color: #5081E4;
+    font-size: 10pt;
+    font-weight: bold;
+    font-family: Tahoma;
+}
+
+#lookup_content #box-before-record table
+{
+    border: none;
+}
+#lookup_content #box-before-record table tr td
+{
+    font-family: Tahoma;
+    font-size: 10pt;
+}
+#lookup_content .step tr th
+{
+    background-color: #FFF2D5;
+}
+
+#lookup_content #box-before-record table
+{
+    border: none;
+}
+#lookup_content #box-before-record table tr td
+{
+    font-family: Tahoma;
+    font-size: 10pt;
+}
+#lookup_content .step tr th
+{
+    background-color: #FFF2D5;
+}
+
+table tr th.bg_th
+{
+    background-color: #FFF2D5;
+}

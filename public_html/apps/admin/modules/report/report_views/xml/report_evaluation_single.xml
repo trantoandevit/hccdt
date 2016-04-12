@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report layout="L"><!--P: Doc, L: Ngang-->
+    <head>
+        <tr>
+            <td size="5%" rowspan="2">STT</td>
+            <td size="25%" rowspan="2">Tên đơn vị</td>
+            <td size="56%" colspan="4">Tiêu chí đánh giá</td>
+            <td size="14%" rowspan="2">Tổng điểm</td>
+        </tr>
+        <tr>
+            <td>Rất tốt</td>
+            <td>Tốt</td>
+            <td>Bình thường</td>
+            <td>Không tốt</td>
+        </tr>
+    </head>
+    <list>
+        <!-- Độ rộng cột trong báo cáo tính bằng pixel -->
+        <item type="text" id="RN"           name="TT" size="5%" align="center" excel_width="21"/>
+        <item type="text" id="C_STAFF_NAME" value_default="0" name="Lĩnh vực" size="25%" excel_width="83"/>
+        <item type="text" id="RAT_TOT" value_default="0" name="Rất tốt" size="14%" align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="TOT" value_default="0" name="Tốt" size="14%" align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="BINH_THUONG" value_default="0" name="Bình thường" size="14%" align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="KHONG_TOT" value_default="0" name="Không tốt" size="14%" align="center" number_format="true" excel_width="18"/>
+        <item type="text" id="TONG_DANH_GIA"  value_default="0" name="Tổng điểm" size="14%" align="center" number_format="true" excel_width="18"/>
+    </list>
+    <total>
+    </total>
+    <sub_total>
+    </sub_total>
+</report>

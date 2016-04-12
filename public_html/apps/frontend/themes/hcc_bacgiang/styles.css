@@ -1,0 +1,89 @@
+.r1 {
+    height:400px;
+}
+.r1 img {
+    display:block;
+    width:100%;
+    height:100%;
+}
+.r2 {
+/*    height:100px;*/
+/*    background-image: url("img/Shape-11.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    float:left;*/
+}
+.r2 .panel {
+    height:100px;
+    margin-bottom: 0;
+}
+.r3 {
+    height:220px;
+}
+.r3 .panel {
+    height:220px;
+}
+.r4 {
+    border:1px solid black;
+    height:650px;
+}
+.r5 {
+    border:1px solid black;
+    height:450px;
+}
+.sb-r1 {
+    height:190px;
+    margin-bottom:40px;
+}
+.sb-r3 {
+    border:1px solid red;
+    height:110px;
+}
+#sb-r1-1 {
+    background-image: url("img/Vector-Smart-Object3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#sb-r1-2 {
+    background-image: url("img/Rectangle-2111.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.margin-top {
+    margin-top:50px;
+}
+.no-padding-left {
+    padding-left: 0;
+}
+#statistic-1 {
+    width:70%;
+    height:150px;
+    margin:20px auto;
+}
+#statistic-2 {
+    width:80%;
+    height:150px;
+    margin:10px auto;
+}
+.month-block {
+    width:30%;
+    border-radius: 5px;
+    height:100%;
+    float:left;
+}
+.statistic-block {
+    width:60%;
+    height:100%;
+    float:left;
+}
+.no-padding {
+    padding-left:0;
+    padding-right: 0;
+}

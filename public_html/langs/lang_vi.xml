@@ -1,0 +1,805 @@
+<lang name="vi">
+    <!-- Dung thuong xuyen -->
+    
+    <text name="advanced search" value="Tìm kiếm nâng cao"/>
+    <text name="account" value="Tài khoản"/>
+    <text name="accept" value="Cập nhật"/>
+    <text name="back" value="Quay lại"/>
+    <text name="help" value="Trợ giúp"/>
+    <text name="logout" value="Thoát"/>
+    <text name="information" value="Thông báo"/>
+    <text name="edit" value="Sửa"/>
+    <text name="update" value="Cập nhật"/>
+    <text name="apply" value="Ghi lại"/>
+    <text name="select" value="Chọn"/>
+    <text name="delete" value="Xoá"/>
+    <text name="add new" value="Thêm mới"/>
+    <text name="sending" value="Đang gửi"/>
+    <text name="submit" value="Đồng ý"/>
+    <text name="please fill all required fields" value="Mời bạn nhập đủ các trường yêu cầu"/>
+    <text name="goback" value="Quay lại"/>
+    <text name="goback to list" value="Danh sách"/>
+    <text name="close window" value="Đóng cửa sổ"/>
+    <text name="quick search" value="Tìm kiếm nhanh"/>
+    <text name="cancel" value="Bỏ qua"/>
+    <text name="processing" value="Đang giải quyết"/>
+    <text name="order" value="Thứ tự hiển thị"/>
+    <text name="close" value="Đóng"/>
+    <text name="Update error, please check all required field" value="Cập nhật thất bại, mời bạn điền đủ các trường"/>
+    <text name="update error" value="Có lỗi xảy ra trong quá trình cập nhật"/>
+    <text name="order1" value="Sắp xếp"/>
+    <text name="search" value="Tìm kiếm"/>
+    <text name="synchronize" value="Đồng bộ hóa dữ liệu"/>
+    <text name="quantity" value="Số lượng"/>
+    <text name="more" value="Xem thêm"/>
+    <text name="more categories" value="Danh sách chuyên mục"/>
+    <text name="all" value="Tất cả"/>
+    <text name="are you sure to delete all selected object?" value="Bạn chắc chắn xoá đối tượng đã chọn?"/>
+    <text name="you must delete child object before delete this:" value="Bạn cần xóa đối tượng con trước:"/>
+    <text name="you must choose atleast one object" value="Bạn cần chọn ít nhất một đối tượng!"/>
+    <text name="there are no record" value="Hiện tại không có bản ghi nào"/>
+    <text name="all change will be lost, continue?" value="Thay đổi của bạn sẽ không được lưu, tiếp tục?"/>
+    <text name="you dont have access right on this function" value="Bạn không có quyền truy cập vào chức năng này!"/>
+    <text name="this object is nolonger available!" value="Đối tượng này không còn tồn tại!"/>
+    <text name="status" value="Trạng thái"/>
+    <text name="default" value="Mặc định"/>
+    <text name="detail" value="Chi tiết"/>
+    <text name="active status" value="Hoạt động"/>
+    <text name="inactive status" value="Không hoạt động"/>
+    <text name="description" value="Mô tả"/>
+    <text name="yes" value="Có"/>
+    <text name="no" value="Không"/>
+    <text name="at" value="Tại"/>
+    <text name="filter" value="Lọc"/>
+    <text name="save and add new" value="Ghi và thêm mới"/>
+    <text name="add new" value="Thêm mới"/>
+    <text name="go back" value="Quay lại"/>
+    <text name="choose file" value="Chọn file"/>
+    <text name="page" value="Trang"/>
+    <text name="record" value="Bản ghi"/>
+    <text name="display" value="Hiển thị"/>
+    <text name="display none" value="Không hiển thị"/>
+    <text name="go to" value="Chuyển tới"/>
+    <text name="total" value="Tổng số"/>
+    <text name="show in homepage" value="Hiện ở trang chủ"/>
+    <text name="name" value="Tên"/>
+    <text name="invalid request data" value="Dữ liệu nhập vào không hợp lệ!"/>
+    <text name="update success" value="Cập nhật thành công"/>
+    <text name="update fail" value="Có lỗi xảy ra khi cập nhật !"/>
+    <text name="confirm" value="Xác nhận"/>
+    <text name="choose image" value="Chọn ảnh"/>
+    <text name="begin date" value="Ngày bắt đầu"/>
+    <text name="end date" value="Ngày kết thúc"/>
+    <text name="url" value="Địa chỉ liên kết"/>
+    <text name="home page" value="Trang chủ"/>
+    
+    <text name="save cache html" value="Lưu cache"/>
+    <text name="cache write error" value="Lưu cache không thành công!"/>
+    <text name="end date not smaller start date" value="Ngày kết thúc phải lớn hơn ngày bắt đầu"/>
+    <text name="miniature" value="Thu nhỏ"/>
+    <text name="single category" value="Chuyên mục đơn"/>
+    <text name="visitor statistic" value="Thống kê truy cập"/>
+    
+        
+    
+    <text name="full name" value="Họ và Tên"/>
+    <text name="alias" value="Bí danh"/>
+    <text name="birthday" value="Ngày sinh"/>
+    <text name="gender" value="Giới tính"/>
+    <text name="id card" value="CMND"/>
+    <text name="record type" value="Thủ tục hành chính"/>
+    
+    <!--  Quan tri login -->
+    <text name="title login" value="Đăng nhập hệ thống"/>
+    <!--citizen account-->
+    <text name="reason" value="Lý do"/>
+    <text name="manager citizen account" value="Quản lý tài khoản công dân"/>
+    
+    <!--  Quan tri user -->
+    <text name="check password" value="Độ dài mật khẩu lớn hơn 5 ký tự"/>
+    <text name="check confirm password" value="Xác nhận mật khẩu không đúng"/>
+    <text name="check button update" value="Thông tin về mật khẩu chưa đúng !!!!"/>
+    <text name="confirm new password" value="Xác nhận mật khẩu"/>
+    <text name="user managerment" value="Quản trị người dùng"/>
+    <text name="user" value="Người dùng"/>
+    <text name="user name" value="Tên người dùng"/>
+    <text name="add user" value="Thêm người dùng"/>
+    <text name="user info" value="Thông tin người dùng"/>
+    <text name="user group" value="Nhóm người dùng"/>
+    <text name="user permit" value="Phân quyền người dùng"/>
+    <text name="user job title" value="Chức danh"/>
+    <text name="ou" value="Đơn vị/Phòng ban"/>
+    <text name="Add OU" value="Thêm đơn vị"/>
+    <text name="parent ou" value="Trực thuộc"/>
+    <text name="insert ou" value="Thêm Đơn vị/Phòng ban"/>
+    <text name="ou name" value="Tên đơn vị"/>
+    <text name="group" value="Nhóm"/>
+    <text name="group code" value="Mã nhóm"/>
+    <text name="group name" value="Tên nhóm"/>
+    <text name="group info" value="Thông tin nhóm"/>
+    <text name="group user" value="Thành viên"/>
+    <text name="add group" value="Thêm nhóm"/>
+    <text name="add user group" value="Thêm Nhóm người dùng"/>
+    <text name="user type" value="Loại"/>
+    <text name="user ou type" value="Đơn vị hành chính"/>
+    <text name="user group type" value="Nhóm người dùng"/>
+    <text name="update ou info" value="Cập nhật thông tin đơn vị"/>
+    <text name="update ou" value="Cập nhật đơn vị"/>
+    <text name="user personal info" value="Thông tin cá nhân NSD"/>
+    <text name="in group" value="Thuộc các nhóm"/>
+    <text name="init date" value="Ngày tạo"/>
+    <text name="new window" value="Cửa sổ mới"/>
+    <text name="grant permission to user" value="Phân quyền cho NSD"/>
+    <text name="login name" value="Tên đăng nhập"/>
+    <text name="password" value="Mật khẩu"/>
+    <text name="confirm password" value="Xác nhận mật khẩu"/>
+    <text name="join group" value="Thêm nhóm"/>
+    <text name="leave group" value="Bỏ nhóm"/>
+    <text name="in ou" value="Thuộc đơn vị"/>
+    <text name="current password" value="Mật khẩu hiện hành"/>
+    <text name="new password" value="Mật khẩu mới"/>
+    <text name="select application" value="Chọn ứng dụng"/>
+    <text name="members" value="Thành viên"/>
+    <text name="grant permission to group" value="Phân quyền cho nhóm"/>
+    <text name="select website" value="Chọn chuyên trang" />
+    <text name="update user group info" value="Cập nhật thông tin nhóm" />
+    <text name="add user to group" value="Thêm người dùng" />
+    <text name="remove user from group" value="Xoá người dùng" />
+    <!--  Danh muc -->
+    <text name="listtype" value="Loại danh mục" />
+    <text name="list" value="Đối tượng danh mục"/>
+    <text name="listtype manager" value="Quản trị loại danh mục" />
+    <text name="filter by listtype name" value="Lọc theo tên loại danh mục" />
+    <text name="list manager" value="Quản trị đối tượng danh mục" />
+    <text name="filter by list name" value="Lọc theo tên danh mục" />
+    <text name="update listtype" value="Cập nhật loại danh mục" />
+    <text name="listtype code" value="Mã loại danh mục" />
+    <text name="listtype name" value="Tên loại danh mục" />
+    <text name="list code" value="Mã danh mục" />
+    <text name="list name" value="Tên danh mục" />
+    <text name="duplicate code list" value="Mã danh mục bị trùng" />
+    
+    <text name="confirmed records" value="Xác thực hồ sơ" />
+
+    
+    <!--  Chuyen trang -->
+    <text name="website manager" value="Quản trị chuyên trang" />
+    <text name="update website" value="Cập nhật chuyên trang" />
+    <text name="website code" value="Mã chuyên trang" />
+    <text name="website name" value="Tên chuyên trang" />
+    <text name="monitor user" value="Người phụ trách" />
+    <text name="choose a theme" value="Chọn giao diện" />
+    <text name="website" value="Chuyên trang" />
+    <!--sitemap-->
+     <text name="has sitemap" value="Sơ đồ website" />
+    <!--weblink -->
+    <text name="weblink" value="Liên kết web"/>
+    <text name="web link" value="Liên kết web"/>
+    <text name="weblink group" value="Nhóm liên kết web"/>
+
+    <!-- chuyen muc -->
+    <text name="not select category" value="không chọn chuyên mục" />
+    <text name="category" value="Chuyên mục" />
+    <text name="category list" value="Danh sách chuyên mục"/>
+    <text name="choose category" value="Chọn chuyên mục"/>
+    <text name="category name" value="Tên chuyên mục" />
+    <text name="root category" value="Chuyên mục gốc" />
+    <text name="parent category" value="Thuộc chuyên mục"/>
+    <text name="category management" value="Quản lý Chuyên mục" />
+    <text name="is video category" value="Chuyên mục video"/>
+    <text name="featured category" value="Chuyên mục nổi bật"/>
+
+    <!-- su kien-->
+    <text name="event" value="Sự kiện" />
+    <text name="event manager" value="Quản lý sự kiện" />
+    <text name="event name" value="Tên sự kiện" />
+    <text name="total record" value="Tổng số bài" />
+    <text name="event detail" value="Chi tiết sự kiện" />
+    <text name="is report" value="Là phóng sự" />
+    <text name="report" value="Phóng sự" />
+
+    <!-- Anh quang cao-->
+    <text name="advertising" value="Ảnh quảng cáo" />
+    <text name="advertising manager" value="Quản lý ảnh quảng cáo" />
+    <text name="position name" value="Tên vị trí: " />
+    <text name="delete position" value="Xoá vị trí" />
+    <text name="advertising name" value="Tên quảng cáo" />
+    <text name="advertising detail" value="Chi tiết ảnh quảng cáo" />
+    
+    <!-- Banner-->
+    <text name="banner manager" value="Quản lý Banner" />
+    <text name="banner image" value="Hình ảnh" />
+    <text name="banner detail" value="Chi tiết Banner" />
+    <text name="banner default" value="Banner mặc định" />
+    
+    <!--widget media_article-->
+    <text name="video limit" value="Hạn chế số lượng video"/>
+    <text name="gallery limit" value="Hạn chế số lượng phóng sự ảnh"/>
+    <text name="gallery" value="Thư viện ảnh"/>
+    
+    <!--advmedia-->
+    <text name="left pane" value="Hiện/ẩn thanh trái"/>
+    <text name="pick file(s)" value="Chọn file"/>
+    <text name="new directory" value="Tạo thư mục mới"/>
+    <text name="folders" value="Danh sách thư mục"/>
+    <text name="root directory" value="Thư mục gốc"/>
+    <text name="{drag text}" value="Bấm vào đây hoặc thả file để Upload"/>
+    <text name="item name" value="Tên"/>
+    <text name="item type" value="Loại"/>
+    <text name="modified" value="Ngày cập nhật"/>
+    <text name="directory" value="Thư mục"/>
+    <text name="uploaded" value="Tải thành công"/>
+    <text name="please enter folder name" value="Mời bạn nhập tên thư mục"/>
+    <text name="up" value="Lên trên"/>
+    <text name="this directory has been moved or deleted" value="Thư mục này đã bị di chuyển hoặc xoá"/>
+    <text name="click here to return to root" value="Bấm vào đây để trở về thư mục gốc"/>
+    <text name="parent directory not exists" value="Thư mục cấp trên không tồn tại"/>
+    <text name="directory already exists" value="Tên thư mục đã tồn tại"/>
+    <text name="directory not empty" value="Không thể xoá (thư mục chưa rỗng)"/>
+    <text name="directory creation failed" value="Tạo thư mục thất bại"/>
+    <text name="error removing directory" value="Xảy ra lỗi khi xoá thư mục"/>
+    <text name="up a level" value="Về thư mục cha"/>
+    <text name="security code" value="Mã bảo vệ"/>
+
+
+    <!-- Tin bai-->
+    <text name="article" value="Tin bài" />
+    <text name="restore" value="Khôi phục"/>
+    <text name="this title already exists" value="Tiêu đề này đã tồn tại"/>
+    <text name="article number" value="Tổng số tin bài"/>
+    <text name="article management" value="Quản lý tin bài"/>
+    <text name="init" value="Khởi tạo"/>
+    <text name="details" value="Chi tiết"/>
+    <text name="pen name" value="Bút danh"/>
+    <text name="action" value="Hành động"/>
+    <text name="attachment" value="Đính kèm"/>
+    <text name="attachments" value="File đính kèm"/>
+    <text name="date" value="Ngày"/>
+    <text name="month" value="Tháng"/>
+    <text name="year" value="Năm"/>
+    <text name="title" value="Tiêu đề"/>
+    <text name="comment" value="Lời bình"/>
+    <text name="related news" value="Tin liên quan"/>
+    <text name="message" value="Lời nhắn"/>
+    <text name="editor" value="Người duyệt"/>
+    <text name="begin date" value="Ngày bắt đầu"/>
+    <text name="init user" value="Người tạo"/>
+    <text name="sub title" value="Tiêu đề phụ"/>
+    <text name="summary" value="Tóm tắt"/>
+    <text name="content" value="Nội dung"/>
+    <text name="author" value="Tác giả"/>
+    <text name="keywords" value="Từ khóa"/>
+    <text name="thumbnail" value="Ảnh đại diện"/>
+    <text name="general info" value="Thông tin chung"/>
+    <text name="preview" value="Xem trước"/>
+    <text name="edit article" value="Biên tập"/>
+    <text name="version" value="Phiên bản"/>
+    <text name="publish time range" value="Thời gian đăng"/>
+    <text name="end date" value="Ngày kết thúc"/>
+    <text name="add article" value="Thêm tin bài"/>
+    <text name="has video" value="Tin bài có video"/>
+    <text name="has gallery" value="Tin bài có bộ ảnh"/>
+
+    <text name="draft" value="Viết nháp"/>
+    <text name="editing" value="Đang biên tập"/>
+    <text name="censoring" value="Đang kiểm duyệt"/>
+    <text name="published" value="Đã xuất bản"/>
+    <text name="file attach" value="File đính kèm"/>
+    <text name="sticky of category" value="Là tin bài nổi bật của (các) chuyên mục"/>
+
+    <!-- Tin bai noi bat-->
+    <text name="sticky" value="Tin bài nổi bật" />
+    <text name="homepage sticky" value="Tin nổi bật của trang chủ"/>
+    <text name="category sticky" value="Tin nổi bật của chuyên mục"/>
+    <text name="breaking news" value="Tin đáng chú ý trong ngày"/>
+    
+    <!--statistic-->
+    <text name="statistic" value="Thống kê truy cập" />
+    <text name="viewing" value="Đang xem" />
+    <text name="web counter" value="Số lượt truy cập" />
+    
+    <!-- Tin tieu diem -->
+    <text name="spotlight" value="Tin tiêu điểm"/>
+    <text name="spotlight position" value="Vị trí tiêu điểm"/>
+
+    <!--tim kiem-->
+    <text name="search result" value="Kết quả tìm kiếm"/>
+    <text name="there are" value="Có"/>
+    <text name="result found" value="kết quả được tìm thấy"/>
+    <text name="found" value="tìm thấy"/>
+    
+    <!-- media-->
+    <text name="file name" value="Tên file" />
+    <text name="media" value="Media" />
+    <text name="media manager" value="Quản trị media" />
+    <text name="time to search" value="Thời gian đăng: " />
+    <text name="begin time to search" value="Từ ngày: " />
+    <text name="end time to search" value="Đến: " />
+    <text name="upload user" value="Người nhâp: " />
+    <text name="all user" value="---Tất cả người dùng---" />
+    <text name="date time" value="Ngày tháng" />
+    <text name="upload date" value="Ngày upload: " />
+    <text name="media detail" value="Ngày tháng" />
+    <text name="media detail" value="Ngày tháng" />
+    <text name="extension" value="Đuôi mở rộng" />
+    <text name="Upload/Insert Media" value="Thư viện" />
+    <text name="Upload Media" value="Tải file" />
+    <text name="Upload" value="Tải lên" />
+    <text name="Media" value="Thư viện" />
+    <text name="select avatar" value="Chọn ảnh đại diện"/>
+    
+    <!-- menu-->
+    <text name="menu" value="Menu" />
+    <text name="menu manager" value="Quản lý menu" />
+    <text name="theme position" value="Vị trí trên theme" />
+    <text name="menu detail" value="chi tiết menu" />
+    <text name="menu name" value="Tên menu" />
+    <text name="root menu" value="Menu gốc" />
+    <text name="the menu" value="Thuộc menu" />
+    <text name="kind of" value="Thể loại" />
+    <text name="select position" value="Chọn bộ menu" />
+    <text name="ministry menu name" value="Tên bộ menu: " />
+    <text name="delete ministry menu" value="Xoá bộ menu" />
+
+
+    <!-- poll Binh chon-->
+    <text name="poll" value="Thăm dò ý kiến" />
+    <text name="poll result" value="Kết quả thăm dò" />
+    <text name="poll manager" value="Quản lý bình chọn" />
+    <text name="You have voted for this poll" value="Bạn đã bình chọn rồi"/>
+    <text name="answer" value="Câu trả lời" />
+    <text name="this poll is expired" value="Câu hỏi này đã hết thời hạn"/>
+    <text name="see result" value="Xem KQ"/>
+    <text name="vote" value="Bình chọn"/>
+    <text name="question" value="Câu hỏi" />
+    <text name="question details" value="Chi tiết câu hỏi" />
+    <text name="poll detail" value="Chi tiết bình chọn" />
+    <text name="add answer" value="Thêm câu trả lời" />
+    <text name="thank you for voting" value="Bạn đã bình chọn"/>
+    <text name="please choose answer" value="Hãy chọn câu trả lời"/>
+
+    <!-- Theme-->
+    <text name="theme" value="Theme" />
+    <!-- header-->
+    <text name="total pending articles" value="Tổng số tin bài chờ duyệt"/>
+    <text name="total redone articles" value="Tổng số tin bài phải sửa"/>
+    <text name="content management" value="Quản trị nội dung"/>
+    <text name="citizen interaction" value="Tương tác công dân"/>
+    <text name="system administration" value="Quản trị hệ thống"/>
+
+    <!-- Dashboard -->
+    <text name="system administration" value="Quản trị hệ thống"/>
+    <text name="position" value="Chức vụ"/>
+    <text name="unit" value="Đơn vị"/>
+    <text name="login times" value="Thời gian đăng nhập"/>
+    <text name="ip address" value="Địa chỉ ip"/>
+    <text name="list type" value="Loại danh mục"/>
+    <text name="login information" value="Thông tin đăng nhập"/>
+    <text name="office manager" value="Quản trị tòa soạn"/>
+
+    <!--Widget-->
+    <text name="some gallery show" value="Số thư viện ảnh hiển thị"/>
+    <text name="woeid" value="Mã khu vực"/>
+    <text name="some news show" value="Số tin bài hiển thị"/>
+    <text name="online list type" value="Danh mục trực tuyến"/>
+    <text name="free text" value="Nội dung tự tạo"/>
+    <text name="support info" value="Thông tin cần biết"/>
+    <text name="TV schedule" value="Lịch truyền hình"/>
+    <text name="time" value="Thời gian"/>
+    <text name="show" value="Chương trình"/>
+    <text name="most visited" value="Xem nhiều nhất"/>
+    <text name="color style" value="Gam màu"/>
+    <text name="weather" value="Thời tiết"/>
+    <text name="gold price" value="Giá vàng"/>
+    <text name="exchange rate" value="Tỷ giá"/>
+    <text name="source" value="Nguồn"/>
+    <text name="type" value="Loại"/>
+    <text name="buy" value="Mua"/>
+    <text name="sell" value="Bán"/>
+    <text name="transfer" value="Chuyển khoản"/>
+    <text name="code" value="Mã"/>
+    <text name="available widgets" value="Widget có sẵn"/>
+    <text name="display mode" value="Kiểu hiển thị"/>
+    <text name="basic" value="Cơ bản"/>
+    <text name="spotlight_list" value="Danh Sách"/>
+    <text name="advanced" value="Cao cấp"/>
+    <text name="widget tools" value="Công cụ cho widget"/>
+    <text name="total cached file" value="Số lượng file tự sinh"/>
+    <text name="total cached size" value="Dung lượng file tự sinh"/>
+    <text name="click to clean trash and refresh cached data" value="Thực hiện dọn rác và làm mới dữ liệu cache"/>
+    <text name="next page" value="Xem tiếp"/>
+    <text name="preview page" value="Xem tiếp"/>
+    
+    
+    <!--front -->
+    <text name="print" value="In trang"/>
+    <text name="send email" value="Gửi bài qua email"/>
+    <text name="error occurs during sending" value="Có lỗi xảy ra trong quá trình gửi"/>
+    <text name="send you an article" value="gửi cho bạn bài báo"/>
+    <text name="with a message" value="Với lời nhắn"/>
+    <text name="send comment" value="Gửi phản hồi"/>
+    <text name="your comment has been sent" value="Phản hồi của bạn đã được gửi"/>
+    <text name="go top" value="Lên trên"/>
+    <text name="captcha" value="Mã xác thực"/>
+    <text name="captcha not valid" value="Mã xác thực chưa đúng"/>
+    <text name="view comment" value="Xem phản hồi"/>
+    <text name="your email" value="Email người gửi"/>
+    <text name="your name" value="Họ và tên"/>
+    <text name="subject" value="Tiêu đề"/>
+    <text name="recent news" value="Tin mới cập nhật"/>
+    <text name="to" value="Tới (To)"/>
+    <text name="CC" value="Đồng gửi (CC)"/>
+    <text name="send" value="Gửi"/>
+    <text name="reset" value="Nhập lại"/>
+    <text name="new video" value="Video mới"/>
+    <text name="invalid email" value="Email bạn vừa nhập không hợp lệ"/>
+    <text name="user email" value="Email"/>
+    <text name="invalid comment" value="Nội dung lời bình không được để trống"/>
+    <text name="view all" value="Xem tất cả"/>
+    <text name="delete the filter conditions" value="Xóa điều kiện lọc"/>
+    <text name="list comment" value="Ý kiến bạn đọc"/>
+    <text name="like" value="Thích"/>
+    <text name="lreply" value="Trả lời"/>
+    <text name="over the specified time" value="Bạn đã sử dụng chức năng này.\n Vui lòng thử lại sau 5 phút"/>
+    <text name="sort  by like votes" value="Xếp theo số lượng bình chọn"/>
+    
+    <text name="other news" value="Các tin bài khác"/>
+    <text name="article detail" value="Chi tiết tin bài"/>
+    <text name="photo gallery detail" value="Chi tiết phóng sự ảnh"/>
+    <text name="there is no comment" value="Không có phản hồi nào"/>
+    <text name="please enter captcha" value="Vui lòng nhập mã xác thực"/>
+    <text name="view by date" value="Xem theo ngày"/>
+    <text name="from date" value="Từ ngày"/>
+    <text name="to date" value="Đến ngày"/>
+    <text name="new post" value="Tin mới"/>
+
+    <text name="first page" value="Trang đầu"/>
+    <text name="last page" value="Trang cuối"/>
+    
+    <!--uncategoried-->
+    <text name="system config" value="Cấu hình hệ thống"/>
+    <text name="thank you for using our email function" value="Cảm ơn bạn đã sử dụng chức năng gửi thư"/>
+    <text name="save cache" value="Lưu cache"/>
+    <text name="votes" value="Bình chọn"/>
+    <text name="television" value="Truyền hình"/>
+	
+    <text name="switch to full version" value="Xem phiên bản đầy đủ"/>
+    <text name="switch to mobile version" value="Trở lại phiên bản di động"/>
+    
+    <!--rss-->
+    <text name="{rss introdution title}" value="RSS của Báo Lạng Sơn"/>
+    <text name="{rss introdution}" value="RSS viết tắt từ Really Simple Syndication là một tiêu chuẩn định dạng tài liệu dựa trên XML nhằm giúp người sử dụng dễ dàng cập nhật và tra cứu thông tin một cách nhanh chóng và thuận tiện nhất bằng cách tóm lược thông tin vào trong một đoạn dữ liệu ngắn gọn, hợp chuẩn. Dữ liệu này được các chương trình đọc tin chuyên biệt gọi là News reader phân tích và hiển thị trên máy tính của người sử dụng. Trên trình đọc tin này, người sử dụng có thể thấy những tin chính mới nhất, tiêu đề, tóm tắt và cả đường link để xem toàn bộ tin."/>
+    <text name="{rss channel title}" value="Các kênh RSS do Báo Lạng Sơn cung cấp"/>
+    <text name="{rss terms title}" value="Các điều khoản sử dụng"/>
+    <text name="{rss terms of use}" value="Các nguồn kênh tin được cung cấp miễn phí cho các cá nhân và các tổ chức phi lợi nhuận. Chúng tôi yêu cầu bạn cung cấp rõ các thông tin cần thiết khi bạn sử dụng các nguồn kênh tin này từ Báo Lạng Sơn.Báo Lạng Sơn có quyền yêu cầu bạn ngừng cung cấp và phân tán thông tin dưới dạng này ở bất kỳ thời điểm nào và với bất kỳ lý do nào."/>
+    
+    
+    <!--mobile-->
+    <text name="next mobile" value="Xem tiếp"/>
+     <!--gop y phan hoi-->
+     <text name="feedback" value="Góp ý - Phản hồi"/>
+     <text name="unanswered" value="Chưa trả lời"/>
+     <text name="answered" value="Đã trả lời"/>
+     <text name="reply" value="Trả lời"/>
+     <text name="private answer" value="Trả lời riêng qua email"/>
+     <text name="thank you for use feedback" value="Cảm ơn bạn đã góp ý"/>
+     <text name="send feedback" value="Gửi ý kiến góp ý"/>
+     <text name="date submitted" value="Ngày gửi"/>
+     <text name="list feedback" value="Danh sách các ý kiến góp ý"/>
+     <!--end gop y phan hoi-->
+     
+     <!--widget media_acticle-->
+     <text name="News video and photo essay" value="Tin video và phóng sự ảnh"/>
+     <!--end widget media acticle-->
+     
+	   
+     <!--Start member-->
+     <text name="member" value="Quản lý đơn vị trực thuộc"/>
+     <text name="member detail" value="Chi tiết đơn vị trực thuộc"/>
+     <text name="name member" value="Tên đơn vị"/>
+     <text name="code member" value="Mã đơn vị"/>
+     <text name="member email" value="Email trao đổi thông tin"/>
+     <text name="member list" value="Danh sách các đơn vị trực thuộc"/>
+     <text name="member level" value="Cấp đơn vị"/>
+     <text name="of units member" value="Thuộc đơn vị"/>
+     <text name="member department" value="Sở/Ngành"/>
+     <text name="member district" value="Quận/Huyện"/>
+     <text name="member village" value="Phường/Xã"/>
+     <text name="filter text member" value="Nhập mã hoặc tên đơn vị"/>
+     <text name="short code" value="Mã ngắn"/>
+     <text name="use for record no" value="sử dụng cho tự động tạo mã đơn vị"/>
+     <text name="address" value="Địa chỉ"/>
+     <text name="is village" value="Là đơn vị"/>
+     <!--End member-->
+     
+     <!--Start survey-->
+     <text name="single survey" value="Quản lý câu hỏi khảo sát chất lượng"/>
+     <text name="survey detail" value="Chi tiết câu hỏi khảo sát chất lượng"/>
+     <text name="questions list" value="Danh sách câu hỏi"/>
+     <text name="question name" value="Tên câu hỏi khảo sát"/>
+     <text name="survey" value="Câu hỏi khảo sát"/>
+     <text name="you sent answer successfully!" value="Bạn gửi câu trả lời thành công"/>
+     <text name="vote referendum" value="Phiếu trưng cầu ý kiến"/>
+     <text name="send answers" value="Gửi đáp án"/>
+     <text name="unit survey" value="Đơn vị khảo sát"/>
+     <text name="enter the answer" value="Nhập câu trả lời"/>
+     <text name="result" value="Trả lời"/>
+     <!--End survey-->
+     
+     <!--public service-->
+     <text name="public service" value="Dịch vụ công trực tuyến"/>
+     <text name="synthesis" value="Tra cứu tổng hợp"/>
+     
+     <!--end public service-->
+     
+     <!--internet record-->
+     <text name="record Statistics" value="Thống kê hồ sơ"/>
+     <text name="internet record" value="Hồ sơ nộp trực tuyến"/>
+     <text name="internet record detail" value="Chi tiết hồ sơ nộp trực tuyến"/>
+     <text name="phone" value="Điện thoại"/>
+     <!--end internet record-->
+     <text name="you sent answer  successfully!" value="Cảm ơn bạn đã bình chọn cho chủ đề này!" />
+     <text name="idea evaluate general" value="Ý kiến đánh giá chung" />
+     <text name="happen failed to your system. That you please executable again few minutes." value="Xảy ra thất bại trong việc hệ thống. Bạn vui lòng thực thi một lần nữa trong vài phút" />
+     <text name="you need to answer all the questions before hitting the reply button" value="Bạn cần trả lời hết các câu hỏi trước khi nhấn nút trả lời" />
+     <text name="scope" value="Phạm vi"/>
+     <text name="commune/ward" value="Cấp xã/phường"/>
+     <text name="inter-communal->district" value="Liên thông xã->huyện"/>
+     <text name="inter-district->communal" value="Liên thông huyện->xã"/>
+     <text name="district" value="Cấp huyện/thành phố"/>
+
+     <!--evaluation-->
+     <text name="staff assessment guidelines" value="Hướng dẫn đánh giá cán bộ" />
+     <text name="row" value="STT" />
+     <text name="very good" value="Rất tốt" />
+     <text name="good" value="Tốt" />
+     <text name="normal" value="Bình thường" />
+     <text name="not good" value="Không tốt" />
+     <text name="rate" value="Tỷ lệ" />
+     <text name="cadre evaluation" value="Đánh giá cán bộ" />
+     <text name="administrative guide" value="Hướng dẫn TTHC" />
+     <text name="birthday" value="Ngày sinh" />
+     <text name="degree" value="Trình độ" />
+     <text name="job title" value="Chức vụ" />
+     <text name="units" value="Đơn vị" />
+     <text name="select units" value="Chọn đơn vị" />
+     <text name="total vote" value="Tổng số bình chọn" />
+     <text name="successful vote" value="Bỏ phiếu thành công" />
+     <text name="you further evaluation, please wait 30 seconds" value="Bạn để đánh giá lần tiếp, Xin vui lòng đợ sau 30 giây" />
+     <text name="list of organization in" value="Danh sách các đơn vị thuộc" />
+     <text name="post date" value="Ngày đăng" />
+     <text name="select view TV" value="Lựa chọn lịch phát sóng cần xem" />
+     <text name="employee assessment results" value="Kết quả đánh giá cán bộ" />
+     <text name="personnel receiving and evaluating results are good" value="Đánh giá cán bộ/Cán bộ tiếp nhận và trả kết quả được đánh giá tốt" />
+     <text name="point" value="Điểm" />
+     <!--Guidance-->
+     <text name="guidance" value="Hướng dẫn" />
+     <text name="list record type" value="Danh sách thủ tục hành chính" />
+     <text name="record type code" value="Mã thủ tục" />
+     <text name="service level" value="Mức độ dịch vụ công" />
+     <text name="scope" value="Phạm vi" />
+     <text name="list of procedures" value="Danh sách thủ tục" />
+     <text name="detailed guidance on procedures" value="Hướng dẫn chi tiết thủ tục" />
+     <text name="administrative procedure guidelines" value="Hướng dẫn thủ tục hành chính" />
+     <text name="procedures" value="Thủ tục" />
+     <text name="legal basis" value="Cơ sở pháp lý" />
+     <text name="no upload content" value="Nội dung chưa được cập nhật" />
+     <text name="the order excuted" value="Trình tự thực hiện" />
+     <text name="how to perform" value="Cách thực hiện" />
+     <text name="composition, the number of records" value="Thành phần, số lượng hồ sơ" />
+     <text name="time limit for settlement" value="Thời hạn giải quyết" />
+     <text name="subjects execute of administrative procedures" value="Đối tượng thực hiện thủ tục hành chính" />
+     <text name="communal units" value="Đơn vị cấp xã" />
+
+     
+     <!--Citizens question-->
+     <text name="citizens question detail" value="Chi tiết hỏi đáp" />
+     <text name="citizens question manager" value="Quản lý hỏi đáp" />
+     <text name="manager question" value="Quản lý câu hỏi" />
+     <text name="manager field" value="Quản lý loại câu hỏi" />
+     <text name="not approved" value="Không chấp thuận" />
+     <text name="approved" value="Chấp nhận" />
+     <text name="field name" value="Tên loại" />
+     <text name="sender" value="Người gửi" />
+     <text name="key words" value="Từ khóa" />
+     <text name="field detail" value="Chi tiết loại câu hỏi" />
+     
+     <!--End Citizens Question-->
+     <!--theme dvc-->
+     
+     <text name="all field" value="Tất cả lĩnh vực" />
+     <text name="all unit" value="Tất cả đơn vị" />
+     <text name="record list" value="Danh sách hồ sơ" />
+     <text name="reject" value="Từ chối" />
+     <text name="citizens withdraw" value="Hồ sơ công dân rút" />
+     <text name="citizen name" value="Tên công dân" />
+     <text name="faq" value="Hỏi đáp" />
+     <text name="lookup records" value="Tra cứu hồ sơ" />
+     
+     <text name="unit name" value="Tên đơn vị" />
+     <text name="receive" value="Tiếp nhận" />
+     <text name="return" value="Đã giải quyết" />
+     <text name="soon" value="Sớm hạn" />
+     <text name="on time" value="Đúng hạn" />
+     <text name="previous period" value="Kỳ trước" />
+     <text name="period" value="Kỳ báo cáo" />
+     <text name="overdue" value="Quá hạn" />
+     <text name="supplements" value="bổ sung" />
+     <text name="tax" value="thuế" />
+     <text name="liveboard" value="Bảng theo dõi trực tuyến" />
+     <text name="progress chart" value="Biểu đồ tiến độ" />
+     <text name="comparison chart" value="Biểu đồ so sánh" />
+     <text name="pending" value="Đang chờ trả" />
+     <text name="return chart" value="Biểu đồ trả kết quả" />
+     <text name="receive chart" value="Biểu đồ tiếp nhận" />
+     <text name="slow progress" value="Chậm tiến độ" />
+     <text name="outstanding" value="Đang giải quyết" />
+     <text name="has settled" value="Đã giải quyết" />
+     <text name="the rate of soon and on time" value="Tỷ lệ sớm và đúng hạn" />
+     <text name="total Transaction of" value="Bảng tổng hợp giải quyết thủ tục hành chính tháng" />
+     <text name="on time" value="Hồ sơ đúng hạn" />
+     <text name="auto updated" value="Tự động cập nhật" />
+     <text name="to month" value="Đến tháng" />
+     <text name="solved Ha Tinh" value="Tỉnh Hà Tĩnh giải quyết" />
+     <text name="solved Bac Giang" value="Tỉnh Bắc Giang giải quyết" />
+     <text name="solved Hoa Binh" value="Tỉnh Hòa Bình giải quyết" />
+     <text name="One Stop Services" value="Một cửa điện tử" />
+     <text name="status lookup records" value="Tra cứu tình trạng hồ sơ" />
+     
+     <text name="records are processing but slow progress as planned" value="Hồ sơ đang xử lý nhưng chậm tiến độ theo kế hoạch" />
+     <text name="records are processing schedule as planned" value="Hồ sơ đang thụ lý đúng tiến độ theo kế hoạch" />
+     <text name="records are processing overdue compared to the return date" value="Hồ sơ đang thụ lý quá hạn so với ngày hẹn trả" />
+     <text name="records are pending results" value="Hồ sơ đang chờ trả kết quả" />
+     
+     <text name="record awaiting to receive citizen" value="Hồ sơ đang chờ công dân đến nhận" />
+     <text name="pay records earlier than specified procedures" value="Hồ sơ trả sớm hơn thời gian quy định làm thủ tục" />
+     <text name="pay on time records specified procedures" value="Hồ sơ trả đúng thời gian quy định làm thủ tục" />
+     <text name="late payment records than the time prescribed procedures" value="Hồ sơ trả muộn so với thời gian quy định làm thủ tục" />
+     
+     <text name="clear" value="Xóa điều kiện lọc" />
+     <text name="status of statistical records" value="Thống kê trạng thái hồ sơ" />
+     <text name="not yet" value="Chưa đến hạn" />
+     
+     <text name="guidance for internet record" value="Hướng dẫn nộp hồ sơ trực tuyến" />
+     <text name="receiving unit records" value="Đơn vị tiếp nhận hồ sơ" />
+     
+     <text name="administrative procedures name" value="Tên TTHC" />
+     <text name="administrative procedures code" value="Mã TTHC" />
+     <text name="public service level" value="Mức độ cung cấp" />
+     <text name="field" value="Lĩnh vực" />
+     <text name="select field" value="Chọn lĩnh vực" />
+     <text name="select record type" value="Chọn loại hồ sơ" />
+     <text name="record no" value="Mã hồ sơ" />
+     <text name="note" value="Ghi chú" />
+     <text name="attach file" value="File đính kèm" />
+     <text name="verification Code" value="Mã xác thực" />
+     
+     <text name="submit internet record" value="Nộp hồ sơ trực tuyến" />
+     <text name="you have successfully filing, thanks for using the service" value="Bạn đã nộp hồ sơ thành công, cảm ơn đã sử dụng dịch vụ " />
+     
+     <text name="sorry, system not found record" value="Xin lỗi, hệ thống không tìm thấy hồ sơ " />
+     
+     <!--end theme dvc-->
+     
+     <!--Citizens question-->
+     <text name="view answer" value="Xem trả lời" />
+     <text name="asker" value="Người hỏi" />
+     <text name="agency answer" value="Cơ quan trả lời" />
+     <text name="setting question" value="Đặt câu hỏi" />
+     <text name="searching for questions" value="Tìm kiếm câu hỏi" />
+     <text name="day asked" value="Ngày hỏi" />
+     <text name="list question" value="Danh sách câu hỏi" />
+     <text name="other questions" value="Các câu hỏi khác" />
+     <text name="send question" value="Giửi câu hỏi" />
+     <text name="citizens question" value="Hỏi đáp" />
+	 
+     <!--lookup-->
+     <text name="lookup" value="Tra cứu" />
+     
+    <!--End Citizens question-->
+    
+    <!--slide show data-->
+    <text name="receiving records in month" value="Hồ sơ tiếp nhận trong tháng" />
+    <text name="records are processing in month" value="Hồ sơ đang thụ lý trong tháng" />
+    <text name="return reocrd in month" value="Hồ sơ trả kết quả trong tháng" />
+    <!--end slide show-->
+    <!--synthesis-->
+    <text name="summing by unit" value="Tổng hợp theo đơn vị"/>
+    <text name="summing records by field" value="Tổng hợp theo lĩnh vực"/>
+    <text name="profile reception" value="Hồ sơ tiếp nhận"/>
+    <text name="statistics status to resolve profile" value="Thống kê tình trạng giải quyết hồ sơ"/>
+    <text name="statistics records for receiving and returning results" value="Thống kê hồ sơ tiếp nhận và trả kết quả" />
+    <text name="statistical records denied" value="Thống kê hồ sơ bị từ chối" />
+    <text name="statistics records for supplements" value="Thống kê hồ sơ bổ sung" />
+    <text name="statistical graphs" value="Biểu đồ thống kê" />
+    <text name="view the report" value="Xem báo cáo" />
+    
+    
+    <!--End synthesis-->
+    <text name="confirm record" value="Xác nhận hồ sơ" />
+    <text name="information guides record type" value="Thông tin hướng dẫn thủ tục" />
+    <text name="update record type" value="Chi tiết thủ tục" />
+    <text name="record type detail" value="Chi tiết thủ tục" />
+    
+
+    <!--account citizen-->
+    <text name="register" value="Đăng ký"/>
+    <text name="username" value="Tên tài khoản"/>
+    <text name="confirm email" value="Xác nhận email"/>
+    <text name="check confirm email" value="Email xác nhận lại không hợp lệ"/>
+    <text name="tel" value="Số ĐT"/>
+    <text name="identity card" value="Số CMND"/>
+    <text name="birthday" value="Ngày sinh"/>
+    
+
+    <!--Reset Password-->
+    <text name="reset password" value="Đổi mật khẩu" />
+    <text name="new-password not empty." value="Mật khẩu mới không được để trống." />
+    <text name="pre-password not empty." value="Xác nhận mật khẩu mới không được để trống." />
+    <text name="new-password and pre-password same value again." value="Mật khẩu mới và xác nhận mật khẩu phải giống nhau." />
+    <text name="please enter a value greater than or equal to 6." value="Vui lòng nhập tối thiểu 6 ký tự." />
+    <text name="retrieve your password." value="Lấy lại mật khẩu." />
+    <text name="user name" value="Tên đăng nhập" />
+    <text name="code" value="Mã xác thực" />
+    <text name="send request" value="Gửi yêu cầu" />
+    <text name="please specify your name." value="Vui lòng nhập tên đăng nhập." />
+    <text name="please specify email." value="Vui lòng nhập  email." />
+    <text name="please specify code." value="Vui lòng nhập mã xác thực." />
+    <text name="username not existing." value="Tên đăng nhập không tồn tại." />
+    <text name="email not existing.." value="Email không tồn tại." />
+    <text name="our email address must be in the format of name@domain.com" value="Vui lòng nhập đúng định dạng email." />
+    <text name="account detail" value="Chi tiết tài khoản" />
+    <text name="receive date" value="Ngày tiếp nhận hồ sơ" />
+    <text name="fact receive date" value="Ngày tiếp nhận hồ sơ" />
+    <text name="is required" value="là bắt buộc nhập" />
+    <text name="email not existing." value="Email không tồn tại." />
+    <text name="you have successfully changed email" value="Bạn đã thay đổi email thành công!" />
+    <text name="your page does not exist!" value="Bạn đã xác nhận mật khẩu. Nếu bạn đã quên bạn hãy dùng chức năng quên mật khẩu của chúng tôi để yêu cầu đổi mật khẩu mới." />
+    
+    <!--sing citizen acount-->
+    
+    <text name="organize name" value="Tên công ty" />
+    <text name="organization’s name" value="Tên công ty" />
+    <text name="organize name english" value="Tên tiếng anh" />
+    <text name="organization’s name english" value="Tên tiếng anh" />
+    <text name="company perfix" value="Tên viết tắt" />
+    <text name="business registers" value="Số đăng ký kinh doanh" />
+    <text name="date use" value="Cấp ngày" />
+    <text name="granting agencies" value="Cơ quan cấp" />
+    <text name="boss" value="Người đại diện" />
+    <text name="position" value="Chức vụ" />
+    <text name="regisger" value="Đăng ký" />
+    <text name="submitted date" value="Ngày nộp hồ sơ" />
+    <text name="record code" value="Mã hồ sơ" />
+    <text name="return date" value="Ngày hẹn trả" />
+    <text name="citizen account" value="Tài khoản công dân" />
+    <text name="all citizen" value="Danh sách tài khoản công dân" />
+    <text name="single citizen" value="Chi tiết thông tin tài khoản công dân" />
+    <text name="organize" value="Tổ chức" />
+    <text name="brithday" value="Ngày sinh" />
+    <text name="granting agencies" value="Cơ quan cấp" />
+    <text name="account trigger" value="Kích hoạt tài khoản" />
+    <text name="male" value="Nam" />
+    <text name="female" value="Nữ" />
+    <text name="username invalid format" value="Không được dùng ký tự đặc biệt" />
+    <text name="login" value="Đăng nhập" />
+    <text name="enter keywords" value="Nhập từ khóa" />
+    <text name="submit questions" value="Gửi câu hỏi" />
+    <text name="question list" value="Danh sách câu hỏi" />
+    <text name="history filing" value="Lịch sử nộp hồ sơ" />
+    <text name="hello" value="Xin chào" />
+    <text name="register account" value="Đăng ký tài khoản" />
+    <text name="remember me" value="Ghi nhớ" />
+    <text name="activity" value="Hoạt động" />
+    <text name="quarter" value="Quý" />
+    <text name="report management" value="Quản lý báo cáo" />
+    <text name="report all evaluation" value="BC tổng hợp đáng giá cán bộ" />
+    <text name="report single evaluation" value="BC chi tiết đánh giá cán bộ" />
+    <text name="report staff" value="Báo cáo đánh giá cán bộ" />
+    <text name="report print" value="In báo cáo" />
+    <text name="report all recordtype" value="BC tổng hợp giải quyết TTHC" />
+    <text name="report single recordtype" value="BC chi tiết giải quyết TTHC" />
+    <text name="report statistics" value="Báo cáo thống kê" />
+    <text name="report recordtype" value="Báo cáo tổng hợp giải quyết thủ tục hành chính" />
+
+</lang>

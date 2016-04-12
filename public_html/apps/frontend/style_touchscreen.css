@@ -1,0 +1,187 @@
+
+.header{
+    background: #000000 url(images/bg-header-ts.png) top left repeat-x;
+    padding: 5px 10px;
+}
+.content
+{
+	min-height:500px;
+}
+
+.header .title
+{
+    color:white;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+}
+/*menu left*/
+.menu-left
+{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        background: white;
+        width: 100%;
+}
+
+.menu-left li
+{
+    width: 100%;
+    background: #000000 url(images/bg-left-menu.png) top left repeat-x;
+    padding: 15px;
+    display: block;
+}
+.menu-left li a
+{
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+
+.menu-left li .icon-menu
+{
+    font-size: 17px;
+    color: #949494;
+    float: right;
+}
+
+
+.menu-left li.active
+{
+    background: #000000 url(images/bg-left-menu-active.png) top left repeat-x;
+}
+
+.menu-left li.active a
+{
+    color: white;
+}
+.menu-left li.active .icon-menu
+{
+    color: #F1F3F5;
+}
+/*end menu left*/
+
+/*menu member*/
+.menu_member
+{
+    list-style-type: none;
+    margin: 10px 20px 10px 5px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.menu_member li.title
+{
+    border: 1px solid #56A00E;
+    background: #74b042;
+    padding: 7px 15px;
+    color: white;
+    text-transform: uppercase;
+    
+}
+.menu_member li
+{
+    border-bottom: 1px solid #ccc;
+    background: #000000 url(images/bg-meber-item.png) top left repeat-x;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    
+}
+.menu_member li a
+{
+    color: #2f3e46;
+    font-weight: bold;
+}
+.menu_member li.last
+{
+    border: none;
+}
+/*end menu member*/
+
+
+/*menu staff*/
+.menu_staff
+{
+    list-style-type: none;
+    margin: 10px 20px 10px 5px;
+    padding: 0px;
+}
+.menu_staff li 
+{
+    background-image: linear-gradient( #f6f6f6,#e0e0e0 );
+    border-bottom: 1px solid #E3E3E3;
+}
+.menu_staff li a
+{
+    color: black;
+}
+.menu_staff li.title
+{
+    background: #000000 url(images/bg-menu-staff-title.png) top left repeat-x;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+}
+
+.menu_staff li .staff_info
+{
+    padding: 10px 0px;
+}
+.menu_staff li .staff_info .name
+{
+    font-size: 15px;
+    font-weight: bold;
+    color: #2f3e46;
+}
+/*end menu staff*/
+
+
+#list
+{
+    overflow: hidden;
+    margin-top: 20px;
+}
+#list ul li
+{
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    width: 25%;
+    cursor: pointer;
+}
+#list ul li *
+{
+    color: #254F77;
+    font-weight: bold;
+    font-size: 16px;
+}
+#list ul li img
+{
+    width: 80px;
+    clear: both;
+    
+}
+#list ul li a
+{
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    text-align: center
+}
+#list ul li a span
+{
+    width: 100%;
+    display: block;
+}
+
+.staff_name
+{
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

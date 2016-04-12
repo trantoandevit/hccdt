@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <line label="Thông tin giới thiệu về theme" cols="1">
+        <item type="TextboxArea" id="txtGioiThieu" name="Giới thiệu" allownull="no" validate="text" label="Giới thiệu:" defaul_value="" size="120" css="" view="true"/>
+    </line>
+    <line label="Danh mục mã vị trí widget" cols="1">
+        <item type="Textbox" id="txtvitriwidget" name="Các vị trí widget" allownull="no" validate="text" label="Các vị trí:" defaul_value="" size="120" css="" view="true"/>
+    </line>
+    <line label="Các vị trí widget hiện trang chủ" cols="1">
+        <item type="Textbox" id="txt_widget_position_home" name="Các vị trí widget hiện trang chủ" allownull="no" validate="text" label="Các vị trí widget cho trang chủ:" defaul_value="" size="120" css="" view="true"/>
+    </line>
+    <line label="Các vị trí widget hiện trang nhóm" cols="1">
+        <item type="Textbox" id="txt_widget_position_archive" name="Các vị trí widget hiện trang nhóm" allownull="no" validate="text" label="Các vị trí widget hiện trang nhóm:" defaul_value="" size="120" css="" view="true"/>     
+    </line>
+    <line label="Các vị trí widget hiện trang đơn" cols="1">
+        <item type="Textbox" id="txt_widget_position_single" name="Các vị trí widget hiện trang đơn" allownull="no" validate="text" label="Các vị trí widget hiện trang đơn:" defaul_value="" size="120" css="" view="true"/>
+    </line>
+    <line label="CSS class Theme cung cấp cho Widget" cols="1">
+        <item type="Textbox" id="txt_widget_class" name="Danh sách Class" allownull="no" validate="text" label="Danh sách Class:" defaul_value="" size="120" css="" view="true"/>
+    </line>
+    <line label="Danh mục mã vị trí menu" cols="1">
+        <item type="Textbox" id="txtvitrimenu" name="Các vị trí menu" allownull="no" validate="text" label="Các vị trí:" defaul_value="" size="120" css="" view="true"/>
+    </line>
+</form>

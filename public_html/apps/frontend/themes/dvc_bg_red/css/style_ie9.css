@@ -1,0 +1,57 @@
+.gradient {
+    filter: none;
+}
+
+.tabs_bottom div center input[type="button"]{
+    width: 12px;
+    height: 15px;
+    margin-bottom: 10px;
+}
+
+#footer {
+    background-color: #323337;
+}
+
+.item a {
+    font-size: 10px;
+}
+
+.div_menu_footer a {
+    font-size: 10px;
+}
+#div_tabs ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.theme-tabs .left-Col p {
+    width: 101px;
+    height: 68px;
+}
+.theme-tabs .left-Col{
+    width: 20%;
+}
+.menu_reader_interaction {
+    height: 35px;
+}
+.top_menu_header {
+    margin-top: -12px;
+}
+.article_row ul {
+    padding-left: 12px;
+}
+.ButtonSearch {
+    bottom: 0px;
+}
+.div_search input[type="textbox"] {
+    height: 24px;
+}
+.header3_blue {
+    margin-top: 10px;
+}
+
+.Row .right-Col {
+    padding-left: 5px;
+    float:left;
+    display: inline-table;
+    width: 60%;
+}

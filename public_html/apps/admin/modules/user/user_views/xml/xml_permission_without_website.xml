@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>  
+    <!-- *********************************************************************************************************** -->
+    <line label="Quyền với thông tin tòa soạn" cols="1">
+        <item type="Checkbox" value="1" id="XEM_DANH_SACH_THONG_TIN" name="" allownull="" validate="" title="Xem danh sách thông tin tòa soạn" label="" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Checkbox" value="1" id="THEM_MOI_THONG_TIN" name="" allownull="" validate="" title="Thêm mới thông tin tòa soạn" label="" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Checkbox" value="1" id="SUA_THONG_TIN" name="" allownull="" validate="" title="Sửa thông tin tòa soạn" label="" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Checkbox" value="1" id="XOA_THONG_TIN" name="" allownull="" validate="" title="Xóa thông tin tòa soạn" label="" view="true"/>
+    </line>
+     <!-- *********************************************************************************************************** -->
+    <line label="Quyền với chuyên trang" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_CHUYEN_TRANG" name="" allownull="" validate="" title="Quản lý danh sách chuyên trang" label="" view="true"/>
+    </line>
+     <!-- *********************************************************************************************************** -->
+    <line label="Quyền với media" cols="1">
+        <item type="Checkbox" value="1" id="XEM_DANH_SACH_MEDIA" name="" allownull="" validate="" title="Xem danh sách đa phương tiện" label="" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Checkbox" value="1" id="THEM_MOI_MEDIA" name="" allownull="" validate="" title="Thêm mới file đa phương tiện" label="" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Checkbox" value="1" id="XOA_MEDIA" name="" allownull="" validate="" title="Xoá file đa phương tiện" label="" view="true"/>
+    </line>
+     <!-- *********************************************************************************************************** -->
+    <line label="Quyền với loại danh mục" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_LISTTYPE" name="" allownull="" validate="" title="Quản lý danh sách loại danh mục" label="" view="true"/>
+    </line>
+    
+     <!-- *********************************************************************************************************** -->
+    <line label="Quyền với đối tượng danh mục" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_LIST" name="" allownull="" validate="" title="Quản lý danh sách đối tượng danh mục" label="" view="true"/>
+    </line>
+    
+     <!-- *********************************************************************************************************** -->
+    <line label="Quyền quản trị nhân sự" cols="1">
+        <item type="Checkbox" value="1" id="XEM_DANH_SACH_NHAN_SU" name="" allownull="" validate="" title="Xem danh sách nhân sự" label="" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Checkbox" value="1" id="THEM_MOI_NHAN_SU" name="" allownull="" validate="" title="Thêm mới nhân sự" label="" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Checkbox" value="1" id="SUA_NHAN_SU" name="" allownull="" validate="" title="Sửa thông tin nhân sự" label="" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="Checkbox" value="1" id="XOA_NHAN_SU" name="" allownull="" validate="" title="Xoá nhân sự" label="" view="true"/>
+    </line>
+     <!-- *********************************************************************************************************** -->
+    <line label="Quyền quản lý thủ tục hành chính" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_THU_TUC_HANH_CHINH" name="" allownull="" validate="" title="Quản lý danh sách thủ tục hành chính" label="" view="true"/>
+    </line>
+     <!-- *********************************************************************************************************** -->
+    <line label="Quyền quản lý đơn vị trực thuốc" cols="1">
+        <item type="Checkbox" value="1" id="QL_DON_VI_TRUC_THUOC" name="" allownull="" validate="" title="Quản lý danh sách đơn vị trực thuộc" label="" view="true"/>
+    </line>
+     <!-- *********************************************************************************************************** -->
+    <line label="Quyền quản lý danh sách hồ sơ nộp trực tuyến" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_DANH_HO_SO_NOP_TRUC_TUYEN" name="" allownull="" validate="" title="Quản lý danh sách hồ sơ nộp trực tuyến" label="" view="true"/>
+    </line>
+    
+    <!-- *********************************************************************************************************** -->
+    <line label="Quyền với Góp ý - Phản hồi" cols="1">
+        <item type="Checkbox" value="1" id="QL_GOP_Y" name="" allownull="" validate="" title="Quản lý danh sách góp ý" label="" view="true"/>
+    </line>
+    
+    <!-- *********************************************************************************************************** -->
+    <line label="Quyền quản lý danh sách câu hỏi khảo sát" cols="1">
+        <item type="Checkbox" value="1" id="QL_CAU_HOI_KHAO_SAT" name="" allownull="" validate="" title="Quản lý danh sách câu hỏi khảo sát" label="" view="true"/>
+    </line>
+    
+    <!-- *********************************************************************************************************** -->
+    <line label="Quyền quản lý danh sách câu hỏi, hỏi đáp" cols="1">
+        <item type="Checkbox" value="1" id="QL_CAU_HOI_DAP" name="" allownull="" validate="" title="Quản lý danh sách câu hỏi khảo sát" label="" view="true"/>
+    </line>
+    
+    <!-- *********************************************************************************************************** -->
+    <line label="Quyền với Thăm dò ý kiến" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_CUOC_THAM_DO_Y_KIEN" name="" allownull="" validate="" title="Quản lý danh sách cuộc thăm dò ý kiến" label="" view="true"/>
+    </line>
+    
+    <!-- *********************************************************************************************************** -->
+    <line label="Quyền quản lý tài khoản công dân" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_TAI_KHOAN_CONG_DAN" name="" allownull="" validate="" title="Quản lý danh sách tài khoản công dân" label="" view="true"/>
+    </line>
+    
+    <!-- *********************************************************************************************************** -->
+    <line label="Quyền quản lý báo cáo tổng hợp đánh giá cán bộ" cols="1">
+        <item type="Checkbox" value="1" id="QL_BAO_TONG_HOP_DANH_GIA_CAN_BO" name="" allownull="" validate="" title="Quản lý báo cáo tổng hợp đánh giá cán bộ" label="" view="true"/>
+    </line>
+    <!-- *********************************************************************************************************** -->
+    <line label="Quyền quản lý báo cáo chi tiết đánh giá cán bộ" cols="1">
+        <item type="Checkbox" value="1" id="QL_BAO_CHI_TIET_DANH_GIA_CAN_BO" name="" allownull="" validate="" title="Quản lý báo cáo chi tiết đánh giá cán bộ" label="" view="true"/>
+    </line>
+    
+    <!-- *********************************************************************************************************** -->
+    <line label="Quyền quản lý báo cáo tổng hợp tình hình giải quyết thủ tục hành chính" cols="1">
+        <item type="Checkbox" value="1" id="QL_BAO_CAO_TONG_HOP_GIAI_QUYET_THU_TUC_HANH_CHINH" name="" allownull="" validate="" title="Quyền quản lý báo cáo tổng hợp tình giải quyết thủ tục hành chính" label="" view="true"/>
+    </line>
+    <!-- *********************************************************************************************************** -->
+    <line label="Quyền quản lý báo cáo chi tiết tình hình giải quyết thủ tục hành chính" cols="1">
+        <item type="Checkbox" value="1" id="QL_BAO_CAO_CHI_TIET_GIAI_QUYET_THU_TUC_HANH_CHINH" name="" allownull="" validate="" title="Quản lý báo cáo chi tiết tình hình giải quyết thủ tục hành chính" label="" view="true"/>
+    </line>
+    
+    <!-- *********************************************************************************************************** -->
+    <line label="Theo dõi trực tuyến" cols="1">
+        <item type="Checkbox" value="1" id="THEO_DOI_TRUC_TUYEN" name="" allownull="" validate="" title="Theo dõi trực tuyến các đơn vị trực thuộc" label="" view="true"/>
+    </line>
+</form>

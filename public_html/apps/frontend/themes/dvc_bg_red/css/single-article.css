@@ -1,0 +1,140 @@
+
+#single-article #main-content
+{
+    text-align: justify;
+}
+
+#single-article .div_title label
+{
+    line-height: 45px;
+}
+#single-article .div_title label a
+{
+    color: #666666
+}
+.div_article_title
+{
+    margin: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666666;
+    margin: 8px 0 0px 0; 
+    text-indent: 15px;
+}
+.div_article_summary
+{
+    font-weight: bold;
+    color: #7B7B7B;
+    font-style: italic;
+    font-size: 12px;
+    height: 20px;
+    padding-left: 12px;
+}
+.div_article_summary,.div_article_content
+{
+    font-family: tahoma;
+    font-size: 9pt;
+    color: #666666;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.div_pen_name
+{
+    color: #666666;
+    font-family: Tohoma;
+    text-align: right;
+    font-weight: bold;
+}
+
+.div_article_begin_date_sub_title
+{
+    margin: 0 0 10px 0;
+    color: #8D8B85;
+    font-weight: 700;
+    padding: 0;
+}
+.div_sub_title
+{
+    clear: both;
+    
+}
+.addthis_toolbox.addthis_default_style ul li
+{
+    list-style-type: none;
+}
+#single-article .addthis_button,#single-article .begin-date,#single-article .sub-title
+{
+    margin: 0;padding: 0;
+    
+}
+.box-content .div_title .title-content label,.box-content .div_title .title-content label a, .box-content .div_title .link-list-question a
+{
+    padding-left: 0;
+}
+
+#single-page .begin-date
+{
+    font-style: italic;
+}
+
+#single-article .print
+{
+    float: right;
+    margin-right: 10px;
+    display: block;
+    margin-top: 15px;
+}
+/*###*/
+.other-new
+{
+    margin: 0;
+    padding: 0
+}
+
+.other-new .other-articles-ttile
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #A71817;
+    width: 470px;
+    font-family: Tahoma ;
+    border-bottom: solid 2px #e85a04;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.other-new .other-sticky ul
+{
+    margin: 0  0 20px 0;
+    padding: 0;
+}
+.other-new .other-sticky ul li
+{
+    list-style-type: none;
+    margin: 2px auto 2px;
+}
+.other-new .other-sticky ul li a
+{
+    background:  url('../images/icon-right.png') left center no-repeat;
+    padding-left: 15px;
+    color: #1773BC;
+}
+.other-sticky ul li a:hover
+{
+    color: #e85a04;
+    text-decoration: underline;
+}
+.other-new .other-new-begin-date
+{
+    font-style: italic;
+    color: #8D8B85;
+}
+#main-page
+{
+    border: solid 1px #FFC773; 
+    text-align: justify
+}
+#main-content .video_container
+{
+   height: 450px; 
+}

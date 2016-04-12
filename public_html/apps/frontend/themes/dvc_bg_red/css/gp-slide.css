@@ -1,0 +1,115 @@
+/*QT go-paper silde*/
+.gp-silde 
+{
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    height: 356px;
+}
+/*item*/
+.gp-silde ul
+{
+    float: left;
+}
+.gp-silde ul li
+{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+    list-style: none;
+}
+
+/*end*/
+
+
+/*item detail*/
+.gp-silde .gp-slide-title
+{
+    width: 100%;
+    display: table-row;
+}
+.gp-silde .gp-slide-title a
+{
+    color: #064867;
+    font-size: 12.75pt;
+    font-weight: bold;
+    font-family: Tahoma;
+}
+.gp-slide-content 
+{
+    width: 100%;
+    display: table;
+    height: 328px;
+}
+.gp-slide-content .gp-slide-thumbnail
+{
+    width: 100%;;
+    border: 0px;
+    display: table-row;
+}
+.gp-slide-content .gp-slide-thumbnail a img
+{
+    width: 100%;
+    height: 194px;
+    border: 0px;
+    margin: 0px;
+}
+
+
+.gp-slide-content .gp-slide-summary
+{
+    display: table-row;
+    width: 100%;
+    font-size: 11pt;
+    font-family: Tamoha;
+    font-weight: normal;
+    color: #302f2f;
+    text-align: justify
+}
+/*end*/
+
+
+.gp-silde-button
+{
+    background-color: #DDDED8;
+    float: left;
+    width: 100%;
+}
+
+.gp-silde-button ul
+{
+    margin: 0px;
+    list-style: none;
+    height: 28px;
+    text-align: right;
+    float: right
+}
+.gp-silde-button ul li
+{
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    background-color: white;
+    border: 0;
+    padding-right: 3px;
+    padding-left: 2px;
+    padding-top: 2px;
+    margin: 3px 5px 0px 0px;
+}
+.gp-silde-button ul li a
+{
+    color: #11363B;
+    font-size: 10pt;
+    font-weight: bolder;
+    vertical-align: middle;
+    font-family: Tahoma;
+    cursor: pointer;
+    line-height: 17px;
+}
+
+.gp-silde-button ul li a:hover
+{
+    color: #144067;
+}
+/*end*/

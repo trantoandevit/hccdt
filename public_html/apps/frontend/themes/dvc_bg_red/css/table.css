@@ -1,0 +1,60 @@
+table
+{
+    width: 100%;
+    border: 1px solid #E5E4E4;
+}
+
+table tr.th-border-bottom
+{
+    border-bottom: 2px solid #166D9E;
+}
+
+table tr th, table tr td
+{
+    font-size: 10pt;
+}
+
+table tr th
+{
+    text-align: center;
+    border: 1px solid #E5E4E4;
+    min-width: 42px;
+    padding: 10px 3px;
+}
+table .center
+{
+    text-align: center;
+}
+
+table tr .red
+{
+    color: red;
+}
+
+table tr .blue
+{
+    color: #232DFF;
+}
+
+table tr .green
+{
+    color: #19CE70;
+}
+table tr .orange
+{
+    color: #FF641B;
+}
+table tr .purple
+{
+    color: #D02F86;
+}
+table tr .bold
+{
+    font-weight: bold;
+}
+
+table tr td
+{
+    padding: 5px;
+    border: 1px solid #E5E4E4;
+}

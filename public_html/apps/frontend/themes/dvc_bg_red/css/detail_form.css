@@ -1,0 +1,71 @@
+#from-detail
+{
+    min-height: 200px;
+}
+.tab-content
+{
+    border-bottom: solid 2px #ddd;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+table.panel_table {
+    margin-bottom: 1px;
+    background-color: #cccccc;
+}
+
+table tr.panel_color td {
+    font-weight: bold;
+}
+
+.text_color_red {
+    color: Red;
+}
+
+table tr.xslgridrow {
+    background-color: #F8F8F8;
+}
+
+.button-area
+{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/*notice-container*/
+#notice-container ul li
+{
+    list-style: none;
+}
+
+#solid-button
+{
+    text-align: right;
+}
+/*reset falgun*/
+select, textarea, 
+input[type="text"], input[type="password"], 
+input[type="datetime"], input[type="datetime-local"],
+input[type="date"], input[type="month"], input[type="time"],
+input[type="week"], input[type="number"], input[type="email"], 
+input[type="url"], input[type="search"], 
+input[type="tel"], input[type="color"], .uneditable-input
+{
+    padding: 0px 0px 0px 4px;
+}
+#from-detail td,#from-detail tr,#from-detail table
+{
+    border: none !important;
+}
+#lookup_content
+{
+    border: solid 1px rgba(40, 105, 163, 0.38);
+    border-bottom: none;
+}
+#wrp-form
+{
+    overflow: hidden;
+}
+#lookup_content,#from-detail{
+    
+    border: solid 1px #ddd;
+}

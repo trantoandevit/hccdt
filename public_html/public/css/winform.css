@@ -1,0 +1,80 @@
+body{
+    background-color: #D4D0C8;
+    line-height: 16px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px ;
+}
+select {
+    font-size: 12px;
+}
+
+.top-nav-box
+{
+    background-image: url(../images/top_menu_bg.jpg);
+    background-repeat: no-repeat;
+    padding: 9px;
+    min-height: 38px;
+}
+
+/** List record in table **/
+table *
+{
+    border-color: #BDBDBD;
+}
+table * th {
+    background: buttonface none repeat scroll 0 0;
+    border-color: #BDBDBD #E5E5E5 #E5E5E5 #F2F0EE;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: normal;
+    text-align: center;
+    color: #343434;
+    background-color: #EDEEF0;
+
+}
+table * tr.row0 {
+	background-color: #F4F4F4;
+}
+table * tr.row1 {
+	background-color: #E2E5EE;
+}
+table * td {
+    border-bottom: #E5E5E5 1px solid;
+    border-right: #E5E5E5 1px solid;
+    color: #2F2F2F;
+    text-decoration: none;
+}
+
+/** Button **/
+input[type="button"]
+{
+   
+    border-color: #F2F0EE #75736E #75736E #F2F0EE;
+    height: 35px;
+}
+input[type="text"]
+{
+    border: #E5E5E5 1px solid;
+    color: #2F2F2F;
+}
+.navigator-box
+{
+    background: #FFF;
+    border-color: #F2F0EE #75736E #75736E #F2F0EE;
+    border-width: 1px;
+}
+#wrapper
+{
+    background: url(../images/wrapper_bg.jpg) repeat-y;
+    background-repeat: repeat-y;
+    overflow: hidden
+}
+
+/**text align */
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+

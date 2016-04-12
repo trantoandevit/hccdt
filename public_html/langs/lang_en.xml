@@ -1,0 +1,17 @@
+<lang name="vi">
+    <!--Lastest new-->
+    <text name="Latest new" value="Latest new"/>
+    <text name="Most viewed" value="Most viewed"/>
+    <text name="Latest commment" value="Latest comment"/>
+    <text name="comment" value="Comment"/>
+    <text name="email" value="Email"/>
+    <text name="print" value="Print"/>
+    <text name="results" value="Results"/>
+    <text name="news" value="News"/>
+    <text name="Chờ trả kết quả" value="Pending"/>
+    <text name="Hủy hồ sơ" value="Cancelled"/>
+    <text name="Từ chối" value="Denied"/>
+    <text name="Kỳ trước" value="Period"/>
+    <text name="Tỷ lệ giải quyết" value="Rate solve"/>
+    <text name="Bổ sung HS" value="Supplement"/>
+</lang>

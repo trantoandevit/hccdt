@@ -1,0 +1,208 @@
+table
+{
+    border: 1px solid #E5E4E4;
+}
+
+table tr.th-border-bottom
+{
+    border-bottom: 2px solid #166D9E;
+}
+
+table tr th
+{
+    font-family: Tahoma;
+    font-size: 12pt;
+}
+table tr td
+{
+    font-size: 15pt;
+}
+table tr th
+{
+    text-align: center;
+    border: 1px solid #E5E4E4;
+    min-width: 50px;
+    padding: 10px 2px;
+}
+table .center
+{
+    text-align: center;
+}
+
+table tr .red
+{
+    color: red;
+}
+
+table tr .blue
+{
+    color: #232DFF;
+}
+
+table tr .green
+{
+    color: #19CE70;
+}
+table tr .orange
+{
+    color: #FF641B;
+}
+table tr .purple
+{
+    color: #D02F86;
+}
+table tr .bold
+{
+    font-weight: bold;
+}
+
+table tr td
+{
+    padding: 5px;
+    border: 1px solid #E5E4E4;
+}
+
+.div-synthesis
+{
+    /*margin: 28px 0px;*/
+    border: 1px solid #E5E4E4;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px #848484;
+}
+.div-synthesis .div-footer
+{
+    height: 40px;
+    background: #000000 url(images/bg-footer-synthesis.png) top left repeat-x;
+}
+
+.table_synthesis
+{
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #E5E4E4;
+    
+}
+
+.table_synthesis tr .first
+{
+    border: 1px solid #E5E4E4;
+    border-left: none;
+    border-top: none;
+}
+
+.table_synthesis tr .last
+{
+    border: 1px solid #E5E4E4;
+    border-right: none;
+    border-top: none;
+}
+
+.table_synthesis tr .top
+{
+    border: 1px solid #E5E4E4;
+    border-top: none;
+}
+
+
+.table_synthesis tr .left
+{
+    border-left: none;
+}
+.table_synthesis tr .right
+{
+    border-right: none;
+}
+
+.table_synthesis tr .end
+{
+    background: #B8B8B8;
+    color:white;
+    font-weight: bold;
+}
+
+/*title*/
+
+.div_title
+{
+    margin: 0;
+    padding: 0;
+    background: #000000 url(images/bg-title.png) top left repeat-x;
+    height: 52px;
+    background-size: 100% 100%;
+}
+.div_title label
+{
+    font-size: 18pt;
+    font-family: Tahoma;
+    font-weight: bold;
+    line-height: 45px;  
+    margin: 0px 0px 0px 17px;
+}
+.div_title span
+{
+    font-size: 12pt;
+    font-family: Tahoma;
+    font-weight: bold;
+    line-height: 45px;  
+}
+.div_title img
+{
+    margin: 0px 0px 0px 17px;
+    padding: 0px
+}
+/*end title*/
+.item
+{
+    padding: 20px;
+}
+.title
+{
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 20pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px
+}
+label
+{
+    margin: 5px;
+}
+
+.width_50
+{
+    width: 50px;
+}
+.clear
+{
+    clear: both;
+}
+
+.tiny_chart
+{
+    height: 275px;
+}
+
+.chart
+{
+    height: 550px
+}
+.sub_title
+{
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 14pt;
+    text-transform: uppercase;
+    margin: 0px 0px 10px 0px
+}
+.pie_chart
+{
+    margin: 0px 0px 20px 0px; 
+}
+
+.active
+{
+    display: block;
+}

@@ -1,0 +1,183 @@
+.cadre_evaluation
+{
+    margin: 28px 15px 0px 13px;
+    border: 1px solid #E5E4E4;
+    border-radius: 4px;
+}
+
+.cadre_evaluation .content
+{
+    background: #F2F2F2;
+    padding: 0;
+    float: left;
+    width: 100%;
+    border:1px solid #F2F2F2;
+    margin-top: -8px;
+}
+
+.cadre_evaluation .content .list
+{
+    padding: 0;
+    width: 90%;
+}
+.cadre_evaluation .content .list .item
+{
+    
+}
+.cadre_evaluation .content .list .row
+{
+    display: table;
+    margin: 0;
+}
+.cadre_evaluation .content .list .cadre
+{
+    display: table-cell;
+    float:left;
+    width: 20%;
+}
+
+.cadre_evaluation .content .list .cadre .cadre_info
+{
+    margin: 5px;
+    background: white;
+    box-shadow: 3px 3px 3px #C9C9C9;
+    font-family: Tahoma;
+}
+
+.cadre_evaluation .content .btn
+{
+    border: none;
+    float: left;
+    margin: 108px 7px;
+    line-height: 250px;
+}
+.cadre_evaluation .content .btn-pre
+{
+    background: #000000 url(../images/bt_pre.png) top left;
+    width: 30px;
+    height: 38px;
+}
+
+.cadre_evaluation .content .btn-next
+{
+    background: #000000 url(../images/bt_next.png) top left;
+    width: 30px;
+    height: 38px;
+    float: right;
+}
+
+.cadre_evaluation .content .list .cadre .cadre_info a
+{
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 12px 0px;
+    font-family: Tahoma;
+}
+.cadre_evaluation .content .list .cadre .cadre_info label
+{
+    padding-left: 12px;
+    width: 100%;
+    color: #A19F9F;
+    font-size: 9pt;
+}
+.cadre_evaluation .content .list .cadre .cadre_info .cadre_name
+{
+    text-align: center;
+    padding: 0px;
+    color: #FC7930;
+    font-size: 10pt;
+}
+.cadre_evaluation .content .list .cadre .cadre_info a img
+{
+    width: 108px;
+    height: 110px;
+}
+
+           
+/*** TABLE STYLES ***/
+.table .con0 {background: #fff;}
+.table .con1 {background: #f7f7f7;}
+
+.nav .active {
+    font-weight: bold;
+}
+/****** ASSESSMENT *******/
+
+.ass-parent-status {
+    float: left;
+    background: #E5E5E5;
+    display: block;
+    width: 100%;
+    height: 30px
+}
+.ass-child-status {
+    background: #B20000;
+    padding: 8px 0;
+    display: block;
+    height: 30px
+}
+.note {
+    display: block;
+    color: red;
+}
+/******** ADD ********/
+.overdue {
+    color: red;
+}
+.days-remain {
+    font-weight: bold;
+}
+#overDiv table {
+    background: white;
+}
+#overDiv table table:first-child {
+    background: #FFB270;
+}
+#overDiv table table {
+    background: #EFEFEF;
+}
+.during {
+    color: blue;
+}
+.today {
+    color: green;
+}
+.title-result h3
+{
+    background: rgba(40, 105, 163, 0.38);
+    color: white;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 0;
+    padding-left: 10px;
+    margin: 0;
+}
+.main-content
+{
+    border: solid 1px rgba(40, 105, 163, 0.38);
+}
+.result .total
+{
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size: 16pt;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    font-weight: bold
+}
+.main-content
+{
+    padding-top: 20px
+}
+.main-content .item
+{
+    margin-bottom:  15px;
+}
+#box-scopes
+{
+    margin-top: 5px;
+}

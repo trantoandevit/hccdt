@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes" ?>
+<form>
+    <line label="Link liên kết" cols="1">
+        <item type="TextboxName" id="txt_liveboard" name="bảng theo dõi trực tuyến" allownull="yes" validate="text" label="Bảng theo dõi trực tuyến:" defaul_value="" size="80" css="" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="TextboxName" id="txt_lookup_list" name="danh sách chi tiết hồ sơ" allownull="yes" validate="text" label="Danh sách chi tiết hồ sơ:" defaul_value="" size="80" css="" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="TextboxName" id="txt_lookup" name="chi tiết hồ sơ" allownull="yes" validate="text" label="Chi tiết hồ sơ:" defaul_value="" size="80" css="" view="true"/>
+    </line>
+    <line label="" cols="1">
+        <item type="TextboxName" id="txt_lookup_detail_form" name="form_truct mẫu đơn đăng ký hồ sơ" allownull="yes" validate="text" label="form_truct mẫu đơn đăng ký hồ sơ:" defaul_value="" size="80" css="" view="true"/>
+    </line>
+    <line label="" cols="1">
+            <item type="TextboxName" id="txt_processing_record" name="Hiển thị tình trạng xử lý hồ sơ" allownull="yes" validate="text" label="Hiển thị tình trạng xử lý hồ sơ" defaul_value="" size="80" css="" view="true"/>
+    </line>
+    <line label="Thông tin Services" cols="1">
+            <item type="TextboxName" id="location" name="Location:" allownull="yes" validate="text" label="Location:" defaul_value="" size="80" css="" view="true"/>
+    </line>
+    <line label="" cols="1">
+            <item type="TextboxName" id="uri" name="Uri:" allownull="yes" validate="text" label="Uri:" defaul_value="" size="80" css="" view="true"/>
+    </line>
+</form>

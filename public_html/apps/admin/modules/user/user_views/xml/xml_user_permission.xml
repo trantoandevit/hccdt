@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>  
+    
+    <!-- *********************************************************************************************************** -->
+    <line label="Quyền với chuyên mục" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_CHUYEN_MUC" name="" allownull="" validate="" title="Quản lý danh sách chuyên mục" label="" view="true"/>
+    </line>
+    	
+    <!-- ***************************************************************************************************************** -->
+    <line label="Quyền với tin bài" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_TIN_BAI" name="" allownull="" validate="" title="Quản lý danh sách tin bài" label="" view="true"/>
+    </line>
+    
+    <!-- *********************************************************************************************************************** -->
+    <line label="Quyền với tin nổi bật" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_NOI_BAT" name="" allownull="" validate="" title="Quản lý danh sách tin nổi bật" label="" view="true"/>
+    </line>
+    
+    <!-- ***************************************************************************************************************** -->
+    <line label="Quyền với Tin tiêu điểm" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_VI_TRI_TIEU_DIEM" name="" allownull="" validate="" title="Quản lý danh sách vị trí tiêu điểm" label="" view="true"/>
+    </line>
+
+    <!-- ***************************************************************************************************************** -->
+    <line label="Quyền với banner" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_BANNER" name="" allownull="" validate="" title="Quản lý danh sách banner" label="" view="true"/>
+    </line>
+    
+    <!-- ***************************************************************************************************************** -->
+    <line label="Quyền với ảnh quảng cáo" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_QUANG_CAO" name="" allownull="" validate="" title="Quản lý danh sách ảnh quảng cáo" label="" view="true"/>
+    </line>
+    
+    
+    <!-- *********************************************************************************************************** -->
+    <line label="Quyền với Menu" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_MENU" name="" allownull="" validate="" title="Quản lý danh Menu" label="" view="true"/>
+    </line>
+    
+    <!-- *********************************************************************************************************** -->
+    <line label="Quyền với Sự kiện" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_SU_KIEN" name="" allownull="" validate="" title="Quản lý danh sách sự kiện" label="" view="true"/>
+    </line>
+    
+    <!-- *********************************************************************************************************** -->
+    <line label="Quyền với Widget" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_WIDGET" name="" allownull="" validate="" title="Quản lý danh sách Widget" label="" view="true"/>
+    </line>
+   
+    
+    <!-- *********************************************************************************************************** -->
+    <line label="Quyền với liên kết web" cols="1">
+        <item type="Checkbox" value="1" id="QL_DANH_SACH_WEBLINK" name="" allownull="" validate="" title="Quản lý danh sách liên kết" label="" view="true"/>
+    </line>
+    
+</form>
